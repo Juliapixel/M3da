@@ -2067,28 +2067,28 @@ END
 STRINGTABLE
 BEGIN
     ID_GROUP_LISTGROUPS     "List Groups"
-    ID_VIEW_NODESOFF        "Nodes Off"
-    ID_CREATE_POINT         "Create Points"
-    ID_LINE_LINE            "Create Line"
-    ID_LINE_LINEX           "Line in X"
-    ID_LINE_LINEY           "Line in Y"
+    ID_VIEW_NODESOFF        "[Draw] Nodes Off\n[Draw] Nodes Off"
+    ID_CREATE_POINT         "[Create] Points\n[Create] Points"
+    ID_LINE_LINE            "[Create] Line\n[Create] Line"
+    ID_LINE_LINEX           "[Create] Line in X\n[Create] Line in X"
+    ID_LINE_LINEY           "[Create] Line in Y\n[Create] Line in X"
     ID_CREATE_CIRCLE        "Create Circle"
 END
 
 STRINGTABLE
 BEGIN
-    ID_VIEW_DISPLAYALL      "Diaplay All"
+    ID_VIEW_DISPLAYALL      "[Draw] Display All\n[Draw] Display All\n"
     ID_EDIT_INFORMATION     "Infomation"
-    ID_VIEW_DISPLAYSELECTED "Display Selected"
+    ID_VIEW_DISPLAYSELECTED "[Draw] Display Selected\n[Draw] Display Selected"
     ID_VIEW_DISPLAYGROUP    "Display Group"
 END
 
 STRINGTABLE
 BEGIN
-    ID_VIEW_SHADED          "Draw Shaded"
-    ID_VIEW_LINE            "Draw Wireframe"
-    ID_VIEW_LOCATEEYE       "Set Eye"
-    ID_VIEW_RESETVIEW       "Reset Eye"
+    ID_VIEW_SHADED          "[Draw] Draw Shaded\n[Draw] Draw Shaded"
+    ID_VIEW_LINE            "[Draw] Draw Wireframe\n[Draw] Draw Wireframe"
+    ID_VIEW_LOCATEEYE       "[Draw] Set Eye\n[Draw] Set Eye"
+    ID_VIEW_RESETVIEW       "[Draw] Reset View\n[Draw] Reset View"
     ID_GROUP_DISPLAYGROUP   "Display Current Group"
     ID_GROUP_ADDTOGROUP     "Add Selected Items To Group"
     ID_GROUP_REMOVEFROMGROUP "Remove Selected Items From Group"
@@ -2099,11 +2099,11 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_CREATE_CURVE         "Create Curve"
-    ID_SURFACE_LOFT         "Loft Surface"
-    ID_SURFACE_PLANAR       "Surface by Boundary Curves"
-    ID_SURFACE_REVOLVE      "Revolve Surface About Y Axis"
-    ID_SURFACE_EXTRUDE      "Surface Extrude"
+    ID_CREATE_CURVE         "[Create] Curve\n[Create] Curve"
+    ID_SURFACE_LOFT         "[Create] Loft Surface\n[Create] Loft Surface"
+    ID_SURFACE_PLANAR       "[Create] Surface by Boundary Curves\n[Create] Surface by Boundary Curves"
+    ID_SURFACE_REVOLVE      "[Create] Revolve Surface About Y Axis\n[Create] Revolve Surface About Y Axis"
+    ID_SURFACE_EXTRUDE      "[Create] Surface Extrude\n[Create] Surface Extrude"
     ID_CREATE_NODE          "Create Nodes"
     ID_CREATE_ELEMENT       "Create Elements"
     ID_ELEMENTTYPE_TRI      "Set defualt element type to TRI."
@@ -2126,25 +2126,26 @@ BEGIN
     ID_EXPORT_CURRENTMESHTO "Export Current Mesh"
     ID_GROUP_CREATEGROUP    "Create New Group"
     ID_TOOLS_DELETE         "Delete"
-    ID_CREATE_FITTEDCURVE   "Create Fitted Curve"
+    ID_CREATE_FITTEDCURVE   "[Create] Fitted Curve\n[Create] Fitted Curve"
 END
 
 STRINGTABLE
 BEGIN
     ID_CREATE_OFFSET        "Offset"
     ID_CREATE_FILLET        "Fillet"
-    ID_LINE_LINEANGLE       "Line at Angle"
+    ID_LINE_LINEANGLE       "[Create] Line at Angle\n[Create] Line at Angle"
     ID_CREATE_MAKECORNER    "Make Corner"
     ID_BUTTON32890          "Make Corner"
-    ID_CREATE_RECTANGLE     "Create Rectangle"
+    ID_CREATE_RECTANGLE     "[Create] Rectangle\n[Create] Rectangle"
     ID_BUTTON32893          "Create Rectangle"
 END
 
 STRINGTABLE
 BEGIN
-    ID_SURFACE_PROJECTCURVE "Project Curve onto Surface"
-    ID_SURFACE_TRIMSURFACE  "Surface external trim loop"
-    ID_SURFACE_INTERNALTRIMLOOP "Surface Internal Trim Loop"
+    ID_SURFACE_PROJECTCURVE "[Create] Project Curve onto Surface\n[Create] Surface Extrude"
+    ID_SURFACE_TRIMSURFACE  "[Create] Surface external trim loop\n[Create] Surface external trim loop"
+    ID_SURFACE_INTERNALTRIMLOOP 
+                            "[Create] Surface Internal Trim Loop\n[Create] Surface Internal Trim Loop"
     ID_CREATE_COORDSYS      "Create Coordinate System"
     ID_GROUP_ELEMENTSBYPID  "Add Elements by PID"
     ID_BUTTON32909          "Delete AllGroups"
@@ -2163,15 +2164,15 @@ BEGIN
     ID_MESH_MAPPEDSURFACEMESH "Mapped Quad Mesh on Surface"
     ID_MESH_MAPPEDTRIMESH   "Mapped Tri Mesh on Surface"
     ID_MESH_SWEEPELEMENTS   "Sweep Elements"
-    ID_VISABILITY_NODEON    "Toggle Node Visability"
-    ID_VISABILITY_ELEMENTON "Toggle Element Visability"
-    ID_VISABILITY_CURVESON  "Display Curves"
+    ID_VISABILITY_NODEON    "[Draw] Toggle Node Visibility\n[Draw] Toggle Node Visibility"
+    ID_VISABILITY_ELEMENTON "[Draw] Toggle Element Visibility\n[Draw] Toggle Element Visibility"
+    ID_VISABILITY_CURVESON  "[Draw] Display Curves\n[Draw] Display Curves"
 END
 
 STRINGTABLE
 BEGIN
-    ID_VISABILITY_ALLVISABLE "All Visable"
-    ID_VIEW_LABELENTITIES   "Label Selected Entities"
+    ID_VISABILITY_ALLVISABLE "[Draw] All Visible\n[Draw] All Visible"
+    ID_VIEW_LABELENTITIES   "[Draw] Label Selected Entities \n[Draw] Label Selected Entities"
     ID_QWANTA_IMPORTCATALOGUE "Import Parts Catalogue"
     ID_QWANTA_IMPORTSECTIONTABLE "Import Sections Table"
     ID_QWANTA_IMPORTWAVEGUIDE "Import Waveguide Report"
@@ -2201,29 +2202,33 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_CHECKS_MERGENODES    "Merge Coincident Nodes"
-    ID_SURFACE_SWEEP        "Sweep curves into  surfaces"
+    ID_CHECKS_MERGENODES    "[Utils] Merge Coincident Nodes\n[Utils] Merge Coincident Nodes"
+    ID_SURFACE_SWEEP        "[Create] Sweep curves into surfaces\n[Create] Sweep curves into surfaces"
 END
 
 STRINGTABLE
 BEGIN
-    ID_SURFACES_SURFACESON  "Display Surfaces"
-    ID_CIRCLE_CIRCLECENRERADIUS "Circle centre and radius"
-    ID_CIRCLE_CIRCLE3POINTS "Circle throu 3 points"
-    ID_CIRCLE_ARC3POINT     "Arc throu 3 points"
+    ID_SURFACES_SURFACESON  "[Draw] Display Surfaces\n[Draw] Display Surfaces"
+    ID_CIRCLE_CIRCLECENRERADIUS 
+                            "[Create] Circle centre and radius\n[Create] Circle centre and radius"
+    ID_CIRCLE_CIRCLE3POINTS "[Create] Circle through 3 points\n[Create] Circle through 3 points"
+    ID_CIRCLE_ARC3POINT     "[Create] Arc through 3 points\n[Create] Arc through 3 points"
 END
 
 STRINGTABLE
 BEGIN
-    ID_VIEW_DISPLAYELEMENTCOORDSYS "Display Element Coord Sys"
-    ID_VISABILITY_BOUNDARYCONDITIONS "Toggle Boundary Condition Visability"
+    ID_VIEW_DISPLAYELEMENTCOORDSYS 
+                            "[Draw] Display Element Coord Sys\n[Draw] Display Element Coord Sys"
+    ID_VISABILITY_BOUNDARYCONDITIONS 
+                            "[Draw] Toggle Boundary Condition Visibility\n[Draw] Toggle Boundary Condition Visibility"
     ID_POST_LISTELEMENTRESULT "List selected element results."
     ID_MESHQND              "Quads Between Nodes"
 END
 
 STRINGTABLE
 BEGIN
-    ID_CIRCLE_CIRCLECENTREPOINT "Circle centre and point on radus"
+    ID_CIRCLE_CIRCLECENTREPOINT 
+                            "[Create] Circle centre and point on radius\n[Create] Circle centre and point on radius"
 END
 
 STRINGTABLE
@@ -2255,7 +2260,8 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_VIEW_DISPLAYSHELLTHICKNESS "Display Shell Thickness"
+    ID_VIEW_DISPLAYSHELLTHICKNESS 
+                            "[Draw] Display Shell Thickness\n[Draw] Display Shell Thickness"
     ID_ELEMENTTYPE_BEAM     "Set defualt element type to BEAM."
 END
 
@@ -2295,35 +2301,40 @@ STRINGTABLE
 BEGIN
     ID_PROPISO2             "View ISO2"
     ID_ELEMENTTYPE_MASS     "Lumped mass element type"
-    ID_VISABILITY_WORKPLANE "Display Work Plain"
+    ID_VISABILITY_WORKPLANE "[Draw] Display Work Plane\n[Draw] Display Work Plane"
     ID_LOADSBC_CREATEROTATIONALBODYLOAD 
                             "Create a rotational acceleration load"
-    ID_NODEMODIFY_CHANGEXORDINATE "Change node X ordinate"
-    ID_NODEMODIFY_CHANGEZORDINATE "Change node Z ordinate"
+    ID_NODEMODIFY_CHANGEXORDINATE 
+                            "[Utils] Change node X ordinate\n[Utils] Change node X ordinate"
+    ID_NODEMODIFY_CHANGEZORDINATE 
+                            "[Utils] Change node Z ordinate\n[Utils] Change node Z ordinate"
 END
 
 STRINGTABLE
 BEGIN
-    ID_NODEMODIFY_CHANGEYORDINATE "Change node Y ordinate"
+    ID_NODEMODIFY_CHANGEYORDINATE 
+                            "[Utils] Change node Y ordinate\n[Utils] Change node Y ordinate"
     ID_BUTTON33265          "Modify Node X Ordinate"
     ID_BUTTON33266          "Change node Y ordinate"
     ID_PROPERTYMODIFY_EDITPROPERTYVALUES "Edit Property Values"
     ID_PROPERTY_EDITMATERIALVALUES "Edit Material Values"
-    ID_VIEW_SURFACEDIRECTIONMARKERS "Surface Direction Markers On/Off"
+    ID_VIEW_SURFACEDIRECTIONMARKERS 
+                            "[Draw] Surface Direction Markers On/Off\n[Draw] Surface Direction Markers On/Off"
     ID_POST_LISTNODALRESULTS "List Nodal Results Values"
 END
 
 STRINGTABLE
 BEGIN
     ID_MESH_SHELLCOATSOLIDELEMENTS "Shell Coat Solid Elements"
-    ID_CHECKS_FREEEDGEDISPLAY "Element Free Edges"
+    ID_CHECKS_FREEEDGEDISPLAY 
+                            "[Utils] Display the free edges of selected elements\n[Utils] Display the free edges of selected elements"
     ID_MESH_QUADTOTRI       "Split Quad's into Tri elements"
 END
 
 STRINGTABLE
 BEGIN
     ID_OPTIONS_SETCOLOURBAR "Set Colour Bar Scale"
-    ID_VISABILITY_COORDSON  "Display Coordinate Systems"
+    ID_VISABILITY_COORDSON  "[Draw] Display Coordinate Systems\n[Draw] Display Coordinate Systems"
 END
 
 STRINGTABLE
@@ -2348,7 +2359,7 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_LINE_MULTILINE       "Multiple Continued Line"
+    ID_LINE_MULTILINE       "[Create] Multiple Continued Line\n[Create] Multiple Continued Line"
     ID_MESH_MESHSIZEONSURFACE "Define mesh size on surface for Auto-Mesher"
 END
 
@@ -2359,23 +2370,25 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_CURVETOOLS_TEXT      "Add Text"
+    ID_CURVETOOLS_TEXT      "[Create] Add Text\n[Create] Add Text"
 END
 
 STRINGTABLE
 BEGIN
     ID_CURVEMODIFY_SPLITATPOINT "Split a Curve at a Point"
-    ID_CURVETOOLS_ORTHOSNAP "Toggle Orthogonal Line Drawing Mode."
+    ID_CURVETOOLS_ORTHOSNAP "[Create] Toggle Orthogonal Line Drawing Mode.\n[Create] Toggle Orthogonal Line Drawing Mode."
     ID_CURVEMODIFY_TRIM     "Trim Curves to Other Curves"
 END
 
 STRINGTABLE
 BEGIN
     ID_CURVETOOLS_LINETHROUPTANDTANGENTTOCIRCLE 
-                            "Line Throu Pt and Tangent to Circle"
-    ID_CURVETOOLS_LINETANGENTTO2CIRCLES "Create a Line Tangent to 2 Circles"
+                            "[Create] Line Throu Pt and Tangent to Circle\n[Create] Line Throu Pt and Tangent to Circle"
+    ID_CURVETOOLS_LINETANGENTTO2CIRCLES 
+                            "[Create] Line Tangent to 2 Circles\n[Create] Line Tangent to 2 Circles"
     ID_ORTHO                "Ortgogonal Line Drawing Mode"
-    ID_VIEW_TOGGLECONTROLPOINTVISABILITY "Toggle Control Point Visability"
+    ID_VIEW_TOGGLECONTROLPOINTVISABILITY 
+                            "[Draw] Toggle Control Point Visibility\n[Draw] Toggle Control Point Visibility"
     ID_BUTTON33403          "Toggle Control Point Visability"
 END
 
@@ -2386,12 +2399,12 @@ BEGIN
     ID_QPOINT               "Pick Points Only"
     ID_QCURVE               "Pick Curves Only"
     ID_QALL                 "Pick All"
-    ID_QFILTER_NODES        "Pick Nodes Only"
-    ID_QFILTER_ELEMENTS     "Pick Elements Only"
-    ID_QFILTER_POINTS       "Pick Points Only"
-    ID_QFILTER_CURVES       "Pick Curves Only"
-    ID_QFILTER_SURFACE      "Pick Surfaces Only"
-    ID_QFILTER_ALL          "All Pickable"
+    ID_QFILTER_NODES        "[Quick Filter] Pick Nodes Only\n[Quick Filter] Pick Nodes Only"
+    ID_QFILTER_ELEMENTS     "[Quick Filter] Pick Elements Only\n[Quick Filter] Pick Elements Only"
+    ID_QFILTER_POINTS       "[Quick Filter] Pick Points Only\n[Quick Filter] Pick Points Only"
+    ID_QFILTER_CURVES       "[Quick Filter] Pick Curves Only\n[Quick Filter] Pick Curves Only"
+    ID_QFILTER_SURFACE      "[Quick Filter] Pick Surfaces Only\n[Quick Filter] Pick Surfaces Only"
+    ID_QFILTER_ALL          "[Quick Filter] All Pickable\n[Quick Filter] All Pickable"
 END
 
 STRINGTABLE
@@ -2412,6 +2425,11 @@ STRINGTABLE
 BEGIN
     ID_DIMENSIONTOOLS_CIRCLECENTREMARKER "Create circle centre markers."
     ID_ELEMENTTYPE_BUSH     "Set Element to BUSH"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_ZOOMALL         "[Draw] Fit All on View\n[Draw] Fit All on View"
 END
 
 #endif    // English (United Kingdom) resources
