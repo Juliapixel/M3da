@@ -2106,11 +2106,11 @@ BEGIN
     ID_SURFACE_EXTRUDE      "[Create] Surface Extrude\n[Create] Surface Extrude"
     ID_CREATE_NODE          "Create Nodes"
     ID_CREATE_ELEMENT       "Create Elements"
-    ID_ELEMENTTYPE_TRI      "Set defualt element type to TRI."
-    ID_ELEMENTTYPE_QUAD     "Set defualt element type to QUAD."
-    ID_ELEMENTTYPE_BRICK    "Set defualt element type to BRICK."
-    ID_ELEMENTTYPE_WEDGE    "Set defualt element type to WEDGE."
-    ID_ELEMENTTYPE_TET      "Set defualt element type to TET."
+    ID_ELEMENTTYPE_TRI      "Set default element type to TRI."
+    ID_ELEMENTTYPE_QUAD     "Set default element type to QUAD."
+    ID_ELEMENTTYPE_BRICK    "Set default element type to BRICK."
+    ID_ELEMENTTYPE_WEDGE    "Set default element type to WEDGE."
+    ID_ELEMENTTYPE_TET      "Set default element type to TET."
     ID_CREATE_COPYNODES     "Copy Nodes"
     ID_CREATE_NODEMOVETO    "Node Move To"
 END
@@ -2255,14 +2255,14 @@ BEGIN
     ID_POST_DEFORMEDDISPLAY "Display Deformed Results"
     ID_POST_SELECTDEFORMEDRESULTS "Select Deformed Results"
     ID_OPTIONS_DEFORMATIONSCALE "Deformation Scale"
-    ID_ELEMENTTYPE_ROD      "Set defualt element type to ROD."
+    ID_ELEMENTTYPE_ROD      "Set default element type to ROD."
 END
 
 STRINGTABLE
 BEGIN
     ID_VIEW_DISPLAYSHELLTHICKNESS 
                             "[Draw] Display Shell Thickness\n[Draw] Display Shell Thickness"
-    ID_ELEMENTTYPE_BEAM     "Set defualt element type to BEAM."
+    ID_ELEMENTTYPE_BEAM     "Set default element type to BEAM."
 END
 
 STRINGTABLE
@@ -2434,6 +2434,14 @@ END
 STRINGTABLE
 BEGIN
     ID_VIEW_ZOOMALL         "[Draw] Fit All on View\n[Draw] Fit All on View"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ELEMENTTYPE_TRANSLATIONALSPRING 
+                            "Set default element type to TRANSLATIONALSPRING."
+    ID_ELEMENTTYPE_ROTATIONALSPRING 
+                            "Set default element type to ROTATIONALSPRING."
 END
 
 #endif    // English (United Kingdom) resources
