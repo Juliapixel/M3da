@@ -2059,8 +2059,8 @@ STRINGTABLE
 BEGIN
     ID_CREATE_NODESBETWEEN  "Between Nodes"
     ID_CREATE_NODESONCURVE  "Node On Curve"
-    ID_TOOLS_MOVE           "Move"
-    ID_TOOLS_COPY           "Copy"
+    ID_TOOLS_MOVE           "[Edit] Move\n[Edit] Move"
+    ID_TOOLS_COPY           "[Edit] Copy\n[Edit] Copy"
     ID_PointCR              "Create Point"
 END
 
@@ -2078,7 +2078,7 @@ END
 STRINGTABLE
 BEGIN
     ID_VIEW_DISPLAYALL      "[Draw] Display All\n[Draw] Display All\n"
-    ID_EDIT_INFORMATION     "Infomation"
+    ID_EDIT_INFORMATION     "[Edit] Infomation\n[Edit] Infomation"
     ID_VIEW_DISPLAYSELECTED "[Draw] Display Selected\n[Draw] Display Selected"
     ID_VIEW_DISPLAYGROUP    "Display Group"
 END
@@ -2117,7 +2117,7 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_TOOLS_COLOUR         "Change Colour"
+    ID_TOOLS_COLOUR         "[Edit] Change Colour\n[Edit] Change Colour"
     ID_TOOLS_SETCURRENTMESH "Set Current Mesh"
 END
 
@@ -2125,16 +2125,16 @@ STRINGTABLE
 BEGIN
     ID_EXPORT_CURRENTMESHTO "Export Current Mesh"
     ID_GROUP_CREATEGROUP    "Create New Group"
-    ID_TOOLS_DELETE         "Delete"
+    ID_TOOLS_DELETE         "[Edit] Delete\n[Edit] Delete"
     ID_CREATE_FITTEDCURVE   "[Create] Fitted Curve\n[Create] Fitted Curve"
 END
 
 STRINGTABLE
 BEGIN
-    ID_CREATE_OFFSET        "Offset"
-    ID_CREATE_FILLET        "Fillet"
+    ID_CREATE_OFFSET        "[Edit] Offset\n[Edit] Offset"
+    ID_CREATE_FILLET        "[Edit] Fillet\n[Edit] Fillet"
     ID_LINE_LINEANGLE       "[Create] Line at Angle\n[Create] Line at Angle"
-    ID_CREATE_MAKECORNER    "Make Corner"
+    ID_CREATE_MAKECORNER    "[Edit] Make Corner\n[Edit] Make Corner"
     ID_BUTTON32890          "Make Corner"
     ID_CREATE_RECTANGLE     "[Create] Rectangle\n[Create] Rectangle"
     ID_BUTTON32893          "Create Rectangle"
@@ -2154,7 +2154,7 @@ END
 STRINGTABLE
 BEGIN
     ID_CREATE_COORDSYSLINE  "Create a Line of Coord Systems"
-    ID_TOOLS_MEASURE        "Linear Measure"
+    ID_TOOLS_MEASURE        "[Edit] Linear Measure\n[Edit] Linear Measure"
     ID_BUTTON32921          "Measure Linear Distance"
 END
 
@@ -2188,15 +2188,15 @@ STRINGTABLE
 BEGIN
     ID_CATALOGUEDISPLAY_DISPLAYPREVIOUS "Display Previous in Catalogue"
     ID_QWANTA_BUILDAMDEXPORT "Build and Export Mesh"
-    ID_TOOLS_ALIGN          "Align Objects"
+    ID_TOOLS_ALIGN          "[Edit] Align Objects\n[Edit] Align Objects"
 END
 
 STRINGTABLE
 BEGIN
-    ID_TOOLS_ROTATEABOUT    "Rotate About Vector"
+    ID_TOOLS_ROTATEABOUT    "[Edit] Rotate About Vector\n[Edit] Rotate About Vector"
     ID_BUTTON32980          "Copy and Rotate"
-    ID_TOOLS_SCALE          "Scale Objects"
-    ID_TOOLS_REFLECT        "Reflect Objects"
+    ID_TOOLS_SCALE          "[Edit] Scale Objects\n[Edit] Scale Objects"
+    ID_TOOLS_REFLECT        "[Edit] Reflect Objects\n[Edit] Reflect Objects"
     ID_ELEMENTTYPE_RIGID    "Set defualt element type to RIGID SPIDER."
 END
 
@@ -2233,8 +2233,8 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_TOOLS_COPYTO         "Copy objects by selecting locations"
-    ID_TOOLS_MOVETO         "Move To"
+    ID_TOOLS_COPYTO         "[Edit] Copy objects by selecting locations\n[Edit] Copy objects by selecting locations"
+    ID_TOOLS_MOVETO         "[Edit] Move To\n[Edit] Move To"
     ID_BUTTON33130          "Move objects by selecting locations"
     ID_MESH_TETFROMSHELLBOUNDARY "TET from Shell Boundary"
 END
@@ -2302,6 +2302,7 @@ BEGIN
     ID_PROPISO2             "View ISO2"
     ID_ELEMENTTYPE_MASS     "Lumped mass element type"
     ID_VISABILITY_WORKPLANE "[Draw] Display Work Plane\n[Draw] Display Work Plane"
+    ID_TOOLS_MEASUREANGLE   "[Edit] Measure Angle\n[Edit] Measure Angle"
     ID_LOADSBC_CREATEROTATIONALBODYLOAD 
                             "Create a rotational acceleration load"
     ID_NODEMODIFY_CHANGEXORDINATE 
@@ -2316,8 +2317,10 @@ BEGIN
                             "[Utils] Change node Y ordinate\n[Utils] Change node Y ordinate"
     ID_BUTTON33265          "Modify Node X Ordinate"
     ID_BUTTON33266          "Change node Y ordinate"
-    ID_PROPERTYMODIFY_EDITPROPERTYVALUES "Edit Property Values"
-    ID_PROPERTY_EDITMATERIALVALUES "Edit Material Values"
+    ID_PROPERTYMODIFY_EDITPROPERTYVALUES 
+                            "[Edit] Edit Property Values\n[Edit] Edit Property Values"
+    ID_PROPERTY_EDITMATERIALVALUES 
+                            "[Edit] Edit Material Values\n[Edit] Edit Material Values"
     ID_VIEW_SURFACEDIRECTIONMARKERS 
                             "[Draw] Surface Direction Markers On/Off\n[Draw] Surface Direction Markers On/Off"
     ID_POST_LISTNODALRESULTS "List Nodal Results Values"
@@ -2343,7 +2346,7 @@ BEGIN
     ID_POST_ANIMATENEG      "Animate Positve and Negative Toggle"
     ID_POST_FRAMEDELAY      "Animation Frame Delay"
     ID_POST_ANIMATIONFRAMES "No of Animation Frames"
-    ID_TOOLS_EDITOBJECT     "Edit Object Vakues"
+    ID_TOOLS_EDITOBJECT     "[Edit] Edit Object Values\n[Edit] Edit Object Values"
 END
 
 STRINGTABLE
@@ -2375,9 +2378,10 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_CURVEMODIFY_SPLITATPOINT "Split a Curve at a Point"
+    ID_CURVEMODIFY_SPLITATPOINT 
+                            "[Edit] Split a Curve at a Point\n[Edit] Split a Curve at a Point"
     ID_CURVETOOLS_ORTHOSNAP "[Create] Toggle Orthogonal Line Drawing Mode.\n[Create] Toggle Orthogonal Line Drawing Mode."
-    ID_CURVEMODIFY_TRIM     "Trim Curves to Other Curves"
+    ID_CURVEMODIFY_TRIM     "[Edit] Trim Curves to Other Curves\n[Edit] Trim Curves to Other Curves"
 END
 
 STRINGTABLE
