@@ -1,8 +1,8 @@
 # Editing zoom scroll sensitivity
 
-#### Corresponding branch: [smoother_scroll](/Juliapixel/M3da/tree/smoother_scroll)
+#### Corresponding branch: [smoother_scroll](https://github.com/Juliapixel/M3da/tree/smoother_scroll)
 
-#### List of [changes](/Juliapixel/M3da/compare/master...smoother_scroll)
+#### List of [changes](https://github.com/Juliapixel/M3da/compare/master...smoother_scroll)
 
 -----
 

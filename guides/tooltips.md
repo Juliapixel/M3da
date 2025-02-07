@@ -1,8 +1,8 @@
 # Modifying toolbar tooltips
 
-#### Corresponding branch: [update_tooltips](/Juliapixel/M3da/tree/update_tooltips)
+#### Corresponding branch: [update_tooltips](https://github.com/Juliapixel/M3da/tree/update_tooltips)
 
-#### List of [changes](/Juliapixel/M3da/compare/master...update_tooltips)
+#### List of [changes](https://github.com/Juliapixel/M3da/compare/master...update_tooltips)
 
 -----
 
