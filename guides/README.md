@@ -13,3 +13,4 @@ To get started you must first become familiar with how to compile this program d
 - [Building](building.md)
 - [Changing zoom sensitivity](zoom_sensitivity.md)
 - [Changing toolbar tooltips](tooltips.md)
+- [Making all submenu entries show up](submenu_entries.md)
