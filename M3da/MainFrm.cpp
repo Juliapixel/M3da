@@ -350,7 +350,8 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	lstBasicCommands.AddTail(ID_VIEW_STATUS_BAR);
 	lstBasicCommands.AddTail(ID_VIEW_TOOLBAR);
 
-	CMFCToolBar::SetBasicCommands(lstBasicCommands);
+	// commenting this out disables the annoying arrow thing
+	// CMFCToolBar::SetBasicCommands(lstBasicCommands);
 
   //
 	//DockControlBar(&AA);
