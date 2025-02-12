@@ -16,10 +16,10 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// English (United States) resources
+// English (United Kingdom) resources
 
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
 #pragma code_page(1252)
 
 /////////////////////////////////////////////////////////////////////////////
@@ -42,6 +42,30 @@ IDR_M3daTYPE            ICON                    "res\\M3daDoc.ico"
 IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
 
 IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+
+IDR_DRAW                BITMAP                  "res\\toolbar1.bmp"
+
+IDR_CREATE              BITMAP                  "res\\bmp00001.bmp"
+
+IDR_EDIT                BITMAP                  "res\\bmp00002.bmp"
+
+IDR_FE                  BITMAP                  "res\\bmp00003.bmp"
+
+IDR_GROUP               BITMAP                  "res\\bmp00004.bmp"
+
+IDR_BC                  BITMAP                  "res\\bmp00006.bmp"
+
+IDR_ELTYPE              BITMAP                  "res\\bmp00007.bmp"
+
+IDR_POST                BITMAP                  "res\\bmp00008.bmp"
+
+IDR_PROJ                BITMAP                  "res\\bmp00009.bmp"
+
+IDR_UTILITIES           BITMAP                  "res\\bmp00005.bmp"
+
+IDR_QFILTER             BITMAP                  "res\\bmp00010.bmp"
+
+IDR_DIMS                BITMAP                  "res\\bmp00011.bmp"
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -73,6 +97,239 @@ BEGIN
     BUTTON      ID_EDIT_PASTE
     BUTTON      ID_FILE_PRINT
     BUTTON      ID_APP_ABOUT
+END
+
+IDR_DRAW TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_VIEW_DISPLAYALL
+    BUTTON      ID_VIEW_DISPLAYSELECTED
+    BUTTON      ID_VIEW_SHADED
+    BUTTON      ID_VIEW_LINE
+    BUTTON      ID_VIEW_NODESOFF
+    BUTTON      ID_VIEW_ZOOMALL
+    BUTTON      ID_VIEW_RESETVIEW
+    BUTTON      ID_VIEW_LOCATEEYE
+    BUTTON      ID_VIEW_LABELENTITIES
+    BUTTON      ID_VISABILITY_WORKPLANE
+    BUTTON      ID_VIEW_TOGGLECONTROLPOINTVISABILITY
+    BUTTON      ID_VISABILITY_CURVESON
+    BUTTON      ID_SURFACES_SURFACESON
+    BUTTON      ID_VISABILITY_ALLVISABLE
+    BUTTON      ID_VISABILITY_COORDSON
+    BUTTON      ID_VISABILITY_NODEON
+    BUTTON      ID_VISABILITY_ELEMENTON
+    BUTTON      ID_VISABILITY_BOUNDARYCONDITIONS
+    BUTTON      ID_VIEW_DISPLAYSHELLTHICKNESS
+    BUTTON      ID_VIEW_DISPLAYELEMENTCOORDSYS
+    BUTTON      ID_VIEW_SURFACEDIRECTIONMARKERS
+END
+
+IDR_CREATE TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_CURVETOOLS_ORTHOSNAP
+    SEPARATOR
+    BUTTON      ID_CURVETOOLS_TEXT
+    BUTTON      ID_CREATE_POINT
+    BUTTON      ID_LINE_MULTILINE
+    BUTTON      ID_LINE_LINE
+    SEPARATOR
+    BUTTON      ID_LINE_LINEX
+    BUTTON      ID_LINE_LINEY
+    BUTTON      ID_LINE_LINEANGLE
+    BUTTON      ID_CURVETOOLS_LINETHROUPTANDTANGENTTOCIRCLE
+    SEPARATOR
+    BUTTON      ID_CURVETOOLS_LINETANGENTTO2CIRCLES
+    BUTTON      ID_CREATE_RECTANGLE
+    BUTTON      ID_CIRCLE_CIRCLECENRERADIUS
+    BUTTON      ID_CIRCLE_CIRCLECENTREPOINT
+    SEPARATOR
+    BUTTON      ID_CIRCLE_CIRCLE3POINTS
+    BUTTON      ID_CIRCLE_ARC3POINT
+    BUTTON      ID_CREATE_CURVE
+    BUTTON      ID_CREATE_FITTEDCURVE
+    BUTTON      ID_SURFACE_LOFT
+    SEPARATOR
+    BUTTON      ID_SURFACE_REVOLVE
+    SEPARATOR
+    BUTTON      ID_SURFACE_EXTRUDE
+    BUTTON      ID_SURFACE_PROJECTCURVE
+    BUTTON      ID_SURFACE_TRIMSURFACE
+    BUTTON      ID_SURFACE_PLANAR
+    BUTTON      ID_SURFACE_INTERNALTRIMLOOP
+    BUTTON      ID_SURFACE_SWEEP
+END
+
+IDR_EDIT TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_TOOLS_EDITOBJECT
+    BUTTON      ID_PROPERTYMODIFY_EDITPROPERTYVALUES
+    BUTTON      ID_PROPERTY_EDITMATERIALVALUES
+    BUTTON      ID_TOOLS_MOVETO
+    BUTTON      ID_TOOLS_COPYTO
+    BUTTON      ID_TOOLS_MOVE
+    BUTTON      ID_TOOLS_COPY
+    BUTTON      ID_TOOLS_COPYROTATE2D
+    BUTTON      ID_TOOLS_REFLECT2D
+    BUTTON      ID_TOOLS_ROTATEABOUT
+    BUTTON      ID_TOOLS_COPYROTATE
+    BUTTON      ID_TOOLS_ALIGN
+    BUTTON      ID_TOOLS_REFLECT
+    BUTTON      ID_TOOLS_SCALE
+    BUTTON      ID_CURVEMODIFY_SPLITATPOINT
+    BUTTON      ID_CURVEMODIFY_TRIM
+    BUTTON      ID_CREATE_OFFSET
+    BUTTON      ID_CREATE_FILLET
+    BUTTON      ID_CREATE_MAKECORNER
+    BUTTON      ID_TOOLS_COLOUR
+    BUTTON      ID_EDIT_INFORMATION
+    BUTTON      ID_TOOLS_MEASURE
+    BUTTON      ID_TOOLS_DELETE
+    BUTTON      ID_TOOLS_MEASUREANGLE
+END
+
+IDR_FE TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_TOOLS_SETCURRENTMESH
+    BUTTON      ID_EXPORT_CURRENTMESHTO
+    SEPARATOR
+    BUTTON      ID_CREATE_NODE
+    BUTTON      ID_CREATE_ELEMENT
+    BUTTON      ID_CREATE_NODEMOVETO
+    BUTTON      ID_CREATE_COPYNODES
+    BUTTON      ID_CREATE_NODESBETWEEN
+    BUTTON      ID_CREATE_NODESONCURVE
+    BUTTON      ID_CREATE_COORDSYS
+    BUTTON      ID_CREATE_COORDSYSLINE
+    BUTTON      ID_MESH_SWEEPELEMENTS
+    BUTTON      ID_MESH_MAPPEDSURFACEMESH
+    BUTTON      ID_MESH_MAPPEDTRIMESH
+    BUTTON      ID_MESHQND
+    BUTTON      ID_MESH_QUADTOTRI
+    BUTTON      ID_MESH_TETFROMSHELLBOUNDARY
+    BUTTON      ID_MESH_SHELLCOATSOLIDELEMENTS
+    BUTTON      ID_MESH_MESHSIZEONSURFACE
+    BUTTON      ID_MESH_ADVANCINGFRONTSURFACEMESHTRI
+END
+
+IDR_GROUP TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_GROUP_CREATEGROUP
+    BUTTON      ID_GROUP_LISTGROUPS
+    BUTTON      ID_GROUP_SETCURRENT
+    BUTTON      ID_VIEW_DISPLAYGROUP
+    BUTTON      ID_GROUP_PREVIOUSGRPUP
+    BUTTON      ID_GROUP_NEXTGROUP
+    BUTTON      ID_GROUP_ADDTOGROUP
+    BUTTON      ID_GROUP_REMOVEFROMGROUP
+    BUTTON      ID_GROUP_ADDGROUP
+    BUTTON      ID_GROUP_REMOVEGROUP
+    BUTTON      ID_GROUP_ELEMENTSBYPID
+    BUTTON      ID_GROUP_ELEMENTSBYMID
+    BUTTON      ID_GROUP_ELEMENTSBYCOLOUR
+    BUTTON      ID_GROUP_ELEMENTSBYTYPE
+    BUTTON      ID_GROUP_NODEBYCOLOUR
+    BUTTON      ID_GROUP_NODEBYDEFINITIONSYSTEM
+    BUTTON      ID_GROUP_NODEBUOUTPUTSYS
+    BUTTON      ID_GROUP_DELETEALLGROUPS
+END
+
+IDR_BC TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_ANALYSIS_LOADSETS
+    BUTTON      ID_LOADSBC_BCSETS
+    BUTTON      ID_LOADSBC_TEMPERATURESETS
+    BUTTON      ID_SOLVER_CREATERESTRAINT
+    BUTTON      ID_SOLVER_CREATEFORCE
+    BUTTON      ID_ANALYSIS_CREATEMOMENT
+    BUTTON      ID_ANALYSIS_CREATEPRESSURE
+    BUTTON      ID_LOADSBC_CREATEACCELERATIONBODYLOAD
+    BUTTON      ID_LOADSBC_CREATEROTATIONALBODYLOAD
+    BUTTON      ID_LOADSBC_CREATESTRUCTURALTEMP
+END
+
+IDR_ELTYPE TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_ELEMENTTYPE_ROD
+    BUTTON      ID_ELEMENTTYPE_BEAM
+    BUTTON      ID_ELEMENTTYPE_TRI
+    BUTTON      ID_ELEMENTTYPE_QUAD
+    BUTTON      ID_ELEMENTTYPE_TET
+    BUTTON      ID_ELEMENTTYPE_WEDGE
+    BUTTON      ID_ELEMENTTYPE_BRICK
+    BUTTON      ID_ELEMENTTYPE_TRANSLATIONALSPRING
+    BUTTON      ID_ELEMENTTYPE_ROTATIONALSPRING
+    BUTTON      ID_ELEMENTTYPE_MASS
+    BUTTON      ID_ELEMENTTYPE_RIGID
+    BUTTON      ID_ELEMENTTYPE_BUSH
+END
+
+IDR_POST TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_POST_SELECTDEFORMEDRESULTS
+    BUTTON      ID_POST_SELECTRESULTS
+    BUTTON      ID_POST_DEFORMEDDISPLAY
+    BUTTON      ID_POST_CONTOURRAWDATA
+    BUTTON      ID_POST_SELECTVECTORRESULTS
+    BUTTON      ID_OPTIONS_VECTORSCALE
+    BUTTON      ID_POST_CLEARRESULTSVECTORS
+    BUTTON      ID_POST_ANIMATE
+    BUTTON      ID_POST_ANIMATIONFRAMES
+    BUTTON      ID_POST_FRAMEDELAY
+    BUTTON      ID_POST_ANIMATENEG
+    BUTTON      ID_OPTIONS_DEFORMATIONSCALE
+    BUTTON      ID_OPTIONS_REVERSECOLOURBAR
+    BUTTON      ID_OPTIONS_SETCOLOURBAR
+    BUTTON      ID_POST_TOGRESULTSLABELS
+    BUTTON      ID_POST_LISTNODALRESULTS
+    BUTTON      ID_POST_LISTELEMENTRESULT
+    BUTTON      ID_POST_DELETEALLRESULTSSETS
+END
+
+IDR_PROJ TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_PROJWP
+    BUTTON      ID_PROJ_BOTTOMXZ
+    BUTTON      ID_PROJ_FRONT
+    BUTTON      ID_PROJ_TOP
+    BUTTON      ID_PROJ_LEFTXY
+    BUTTON      ID_PROJ_BACK
+    BUTTON      ID_PROJ_RIGHT
+    BUTTON      ID_PROJSO1
+    BUTTON      ID_PROPISO2
+END
+
+IDR_UTILITIES TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_NODEMODIFY_CHANGEXORDINATE
+    BUTTON      ID_NODEMODIFY_CHANGEYORDINATE
+    BUTTON      ID_NODEMODIFY_CHANGEZORDINATE
+    BUTTON      ID_CHECKS_MERGENODES
+    BUTTON      ID_CHECKS_FREEEDGEDISPLAY
+END
+
+IDR_QFILTER TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_QFILTER_NODES
+    BUTTON      ID_QFILTER_ELEMENTS
+    BUTTON      ID_QFILTER_POINTS
+    BUTTON      ID_QFILTER_CURVES
+    BUTTON      ID_QFILTER_SURFACE
+    BUTTON      ID_QFILTER_ALL
+END
+
+IDR_DIMS TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_DIMENSIONTOOLS_DIMSIZE
+    BUTTON      ID_DIMENSIONTOOLS_ALIGNEDDIM
+    BUTTON      ID_DIMENSIONTOOLS_HORIZONTALDIM
+    BUTTON      ID_DIMENSIONTOOLS_VERTICALDIM
+    BUTTON      ID_DIMENSIONTOOLS_RADIUSDIM
+    BUTTON      ID_DIMENSIONTOOLS_DIAMETERDIM
+    BUTTON      ID_DIMENSIONTOOLS_ANGULARDIMBY3POINTS
+    SEPARATOR
+    BUTTON      ID_DIMENSIONTOOLS_LEADERTEXT
+    BUTTON      ID_DIMENSIONTOOLS_DRAGDIM
+    BUTTON      ID_DIMENSIONTOOLS_CIRCLECENTREMARKER
 END
 
 
@@ -654,1031 +911,6 @@ BEGIN
     LTEXT           "Website : www.m3dfea.com",IDC_STATIC,43,121,204,8,SS_NOPREFIX
 END
 
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Version
-//
-
-VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,0
- PRODUCTVERSION 1,0,0,0
- FILEFLAGSMASK 0x3fL
-#ifdef _DEBUG
- FILEFLAGS 0x1L
-#else
- FILEFLAGS 0x0L
-#endif
- FILEOS 0x4L
- FILETYPE 0x1L
- FILESUBTYPE 0x0L
-BEGIN
-    BLOCK "StringFileInfo"
-    BEGIN
-        BLOCK "040904e4"
-        BEGIN
-            VALUE "CompanyName", "M3d Bespoke Engineering Solutions"
-            VALUE "FileDescription", "M3d Model File"
-            VALUE "FileVersion", "5.0"
-            VALUE "InternalName", "M3da.exe"
-            VALUE "LegalCopyright", "M3d Bespoke Enginnering Solutions.  All rights reserved."
-            VALUE "OriginalFilename", "M3da.exe"
-            VALUE "ProductName", "M3d"
-            VALUE "ProductVersion", "6.4"
-        END
-    END
-    BLOCK "VarFileInfo"
-    BEGIN
-        VALUE "Translation", 0x409, 1252
-    END
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// DESIGNINFO
-//
-
-#ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO
-BEGIN
-    IDD_ABOUTBOX, DIALOG
-    BEGIN
-        LEFTMARGIN, 7
-        RIGHTMARGIN, 311
-        TOPMARGIN, 7
-        BOTTOMMARGIN, 137
-    END
-END
-#endif    // APSTUDIO_INVOKED
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// AFX_DIALOG_LAYOUT
-//
-
-IDD_ABOUTBOX AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// String Table
-//
-
-STRINGTABLE
-BEGIN
-    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
-    IDD_INPUT               "INPUT"
-    IDS_EDIT1               "EIDIT1"
-    IDS_EDIT2               "Edit2"
-    IDS_EDIT3               "Edit3"
-    IDS_DRAW                "Draw"
-    IDS_EDIT                "Edit"
-    IDS_FE                  "FE"
-    IDS_GROUP               "Groups"
-    ID_VIEW_ONWP            "View on Workplane"
-    IDS_BC                  "Loads and Boundary Conditions"
-END
-
-STRINGTABLE
-BEGIN
-    IDR_MAINFRAME           "M3d\n\nM3da\nM3da Files (*.m3d)\n.m3d\nM3da.Document\nM3da.Document"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_APP_TITLE       "M3da"
-    AFX_IDS_IDLEMESSAGE     "Ready"
-END
-
-STRINGTABLE
-BEGIN
-    ID_INDICATOR_EXT        "EXT"
-    ID_INDICATOR_CAPS       "CAP"
-    ID_INDICATOR_NUM        "NUM"
-    ID_INDICATOR_SCRL       "SCRL"
-    ID_INDICATOR_OVR        "OVR"
-    ID_INDICATOR_REC        "REC"
-END
-
-STRINGTABLE
-BEGIN
-    ID_FILE_NEW             "Create a new document\nNew"
-    ID_FILE_OPEN            "Open an existing document\nOpen"
-    ID_FILE_CLOSE           "Close the active document\nClose"
-    ID_FILE_SAVE            "Save the active document\nSave"
-    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
-    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
-    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
-    ID_FILE_PRINT           "Print the active document\nPrint"
-    ID_FILE_PRINT_DIRECT    "Print the active document using current options\nQuick Print"
-    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
-END
-
-STRINGTABLE
-BEGIN
-    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
-    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
-END
-
-STRINGTABLE
-BEGIN
-    ID_FILE_MRU_FILE1       "Open this document"
-    ID_FILE_MRU_FILE2       "Open this document"
-    ID_FILE_MRU_FILE3       "Open this document"
-    ID_FILE_MRU_FILE4       "Open this document"
-    ID_FILE_MRU_FILE5       "Open this document"
-    ID_FILE_MRU_FILE6       "Open this document"
-    ID_FILE_MRU_FILE7       "Open this document"
-    ID_FILE_MRU_FILE8       "Open this document"
-    ID_FILE_MRU_FILE9       "Open this document"
-    ID_FILE_MRU_FILE10      "Open this document"
-    ID_FILE_MRU_FILE11      "Open this document"
-    ID_FILE_MRU_FILE12      "Open this document"
-    ID_FILE_MRU_FILE13      "Open this document"
-    ID_FILE_MRU_FILE14      "Open this document"
-    ID_FILE_MRU_FILE15      "Open this document"
-    ID_FILE_MRU_FILE16      "Open this document"
-END
-
-STRINGTABLE
-BEGIN
-    ID_NEXT_PANE            "Switch to the pParent window pane\nNext Pane"
-    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
-END
-
-STRINGTABLE
-BEGIN
-    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
-END
-
-STRINGTABLE
-BEGIN
-    ID_EDIT_CLEAR           "Erase the selection\nErase"
-    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
-    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
-    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
-    ID_EDIT_FIND            "Find the specified text\nFind"
-    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
-    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
-    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
-    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
-    ID_EDIT_UNDO            "Undo the last action\nUndo"
-    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
-END
-
-STRINGTABLE
-BEGIN
-    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_SCSIZE          "Change the window size"
-    AFX_IDS_SCMOVE          "Change the window position"
-    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
-    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
-    AFX_IDS_SCNEXTWINDOW    "Switch to the pParent document window"
-    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
-    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_SCRESTORE       "Restore the window to normal size"
-    AFX_IDS_SCTASKLIST      "Activate Task List"
-END
-
-STRINGTABLE
-BEGIN
-    IDS_ELTYPE              "Element Type"
-    IDS_STRING113           "Loads and Boundary Conditions"
-    IDS_POST                "Post Processing"
-    IDS_STRING115           "wwww"
-    IDS_LBC                 "Loads and BC"
-    IDS_STATUS_PANE1        "Pane 1"
-    IDS_STATUS_PANE2        "Pane 2"
-    IDS_TOOLBAR_STANDARD    "Standard"
-    IDS_TOOLBAR_CUSTOMIZE   "Customize..."
-END
-
-STRINGTABLE
-BEGIN
-    IDS_EDIT_MENU           "Edit"
-    ID_INDC_LC              "LC               "
-    ID_INDC_BC              "BC              "
-    IDR_DRAW                "Draw"
-    ID_INDICATOR_TS         "TS               "
-    IDR_CREATE              "Create"
-END
-
-STRINGTABLE
-BEGIN
-    ID_SELECTION_ELEMENTSBYMATERIAL 
-                            "Select elements with a specific material ID."
-    ID_MESH_MAPPEDSURFACEMESH "Create a mapped quad mesh on surface."
-    ID_MESH_MAPPEDTRIMESH   "Create a mapped tri mesh on surface."
-    ID_CHECKS_COINCIDENTNODES "Check current mesh for coincident nodes."
-    ID_MESH_SWEEPELEMENTS   "Sweep elements."
-    ID_VIEW_SHADEDEDGES     "Display shaded edges of elements."
-    ID_VISABILITY_NODEON    "Toggle Node Visability"
-    ID_VISABILITY_ELEMENTON "Toggle Element Visability"
-    ID_VIEW_NODESASK        "Displat the nodes as *"
-    ID_VISABILITY_CURVESON  "Toggle Curve Visability"
-END
-
-STRINGTABLE
-BEGIN
-    ID_VISABILITY_ASSEMBLIES "Toggle Assembly Visability"
-    ID_GROUP_DELETEALLGROUPS "Delete All Groups"
-    ID_VIEW_WHITE           "Set the background colour to white."
-    ID_TOOLS_ALIGN          "Align a object in 3d."
-    ID_TOOLS_WPSIZE         "Set the size of the workplain."
-    ID_TOOLS_ROTATEBYANGLES "Rotate an object by angles."
-END
-
-STRINGTABLE
-BEGIN
-    ID_TOOLS_ROTATEABOUT    "Rotate objects about an axis."
-    ID_TOOLS_COPYROTATE     "Copy and rotate selected objects."
-    ID_TOOLS_SCALE          "Scale selected objects."
-    ID_TOOLS_REFLECT        "Reflect selected objects."
-    ID_TOOLS_LISTALLPROPERTIES "List all properties in current mesh"
-    ID_EXPORT_CURRENTMESTTONAS "Export current mesh to Nastran"
-    ID_NODEMODIFY_DEFINITIONCOORDSYS 
-                            "Change the nodal definition coordinate system."
-    ID_ELEMENTTYPE_RIGID    "Rigid Spider Element."
-END
-
-STRINGTABLE
-BEGIN
-    ID_LIST_ALLPROPERTIES   "List all properties in the model."
-    ID_LIST_ALLMATERIALS    "List all materials in the model."
-    ID_LIST_PROPERTY        "List a specific property."
-    ID_LIST_MATERIAL        "List a specific material."
-    ID_VIEW_DISPLAYSHELLTHICKNESS "Display shell element thickness."
-    ID_VIEW_DISPLAYELEMENTOFFSETS "Display offsets on elements."
-    ID_ELEMENTTYPE_BEAM     "Beam Element."
-    ID_ELEMENTMODIFIY_BEAMUPVECTORS "Set the beam orientation vector."
-    ID_ELEMENTMODIFIY_BEAMOFFSET "Set beam offset vector."
-    ID_ELEMENTMODIFIY_SHELLOFFSET "Set shell element offset."
-    ID_PROPERTY_BEAM        "Craete Beam Rod Section (NASTRAN ROD)"
-    ID_PROPERTY_BEAMBAR     "Create Beam Bar Section (NASTRAN BAR)"
-    ID_PROPERTY_BEAMTUBE    "Create Beam Tube Section (NASTRAN TUBE)"
-END
-
-STRINGTABLE
-BEGIN
-    ID_SELECTION_NODESBYCOLOUR "Select nodes with a specific colour."
-    ID_SELECTION_RELATEDTO  "select objects related to other objects."
-    ID_SELECTION_ELEMENTSBYTYPE "Select elements with a specific type."
-    ID_CREATE_COORDSYSLINE  "Create multiple coordinate systems in a line normal to elements."
-    ID_TOOLS_MEASURE        "Measure the distaance between 2 objects."
-    ID_ELEMENTMODIFIY_PID   "Modify the selected element property IDs (PIDs)"
-    ID_NODEMODIFY_OUTPUTCOORDSYS "Change the nodal output coordinate system."
-    ID_EDIT_RELATEDTO       "Pick objects that are related to other objects (eg Nodes that are related to Elements)."
-    ID_EDIT_LABEL           "Select objects by specifying their label."
-END
-
-STRINGTABLE
-BEGIN
-    ID_PROPERTY_BEAMBOX     "Create Beams Box Section (NASTRAN BOX)"
-    ID_MATERIAL_ORTHOTROPIC "Create Orthotropic Material (MAT8) not available in M3d solves"
-    ID_PROPERTYMODIFY_CHANGEMATERIAL 
-                            "Change the material assigned to a property."
-    ID_QWANTA_MERGEBOUNDARIES "Merge the sweep boundaries"
-    ID_CHECKS_MERGENODES    "Merge coincident nodes (1 pair at a time)."
-    ID_MESH_BUILDASSEMBLYMESH "Build a mesh from an assembly of other meshes."
-    ID_SOLVER_SOLVE         "Solve current model - linear static."
-    ID_SOLVER_CREATEFORCE   "Create a force on node."
-END
-
-STRINGTABLE
-BEGIN
-    ID_SOLVER_CREATERESTRAINT "Create a nodal restraint."
-    ID_SURFACESON_SURFACECURVES "Display curves on surfaces"
-    ID_SURFACES_SURFACESON  "Toggle Surface Visability"
-    ID_VISABILITY_POINTSON  "Toggle Point Visability"
-    ID_CIRCLE_CIRCLECENRERADIUS "Create a circle by centre and radius."
-    ID_CIRCLE_CIRCLE3POINTS "Create a circle throu 3 points."
-    ID_CIRCLE_ARC3POINT     "Create an arc throu 3 points."
-    ID_SELECTION_SURFACESBYCOLOUR "Select surfaces with a specific colour."
-    ID_SELECTION_CURVESBYCOLOUR "Select curves with a specific colour."
-    ID_SELECTION_POINTSBYCOLOUR "Select points with a specific colour."
-    ID_WORKPLAIN_WPALIGNTOCURVE "Align the workplain to a specified curve."
-    ID_WORKPLAIN_WPALIGNTOSURFACE 
-                            "Align the workplain to a specified surface."
-    ID_WORKPLAIN_WPCENTRE   "Centre the workplain at a specified point."
-END
-
-STRINGTABLE
-BEGIN
-    ID_IMPORT_TXTTOGROUPS   "Groups from text file"
-    ID_VIEW_DISPLAYMATERIALDURECTION "Display element material directions."
-    ID_OPTIONS_SETCOLOURBAR "Set colour bar min and max limits."
-    ID_VISABILITY_COORDSON  "Toggle Coordinate System Visability"
-    ID_GROUP_NEXTGROUP      "Move to the Next Group"
-    ID_GROUP_PREVIOUSGRPUP  "Move to the Previous Group"
-END
-
-STRINGTABLE
-BEGIN
-    ID_VIEW_DISPLAYELEMENTCOORDSYS "Display element coordinate systems."
-    ID_ANALYSIS_CREATEMOMENT "Create a moment on node."
-    ID_ANALYSIS_CREATEPRESSURE "Create a pressure on shell element."
-    ID_VISABILITY_BOUNDARYCONDITIONS "Toggle Boundary Condition Visability"
-    ID_POST_EXPORTRESULTSTOTEXTFILE "Export the results to a .csv file."
-    ID_NODEMODIFY_LABEL     "Change the seleted node labels by a fixed increment."
-    ID_ELEMENTMODIFIY_LABELBYINC 
-                            "Change the seleted element labels by a fixed increment."
-    ID_NODEMODIFY_LABELBYSTART 
-                            "Change the selected node labels by specifing the start ID."
-    ID_ELEMENTMODIFIY_LABELBYSTART 
-                            "Change the selected element labels by specifing the start ID."
-    ID_POST_LISTELEMENTRESULT "List selected element results."
-    ID_VIEW_GFRADIENTFILLEDBACKGROUND "Display a gradient filled background."
-    ID_ELEMENTMODIFIY_REVERSE "Reverse element definition."
-    ID_MESHQND              "Create quad elements between two sets of nodes."
-END
-
-STRINGTABLE
-BEGIN
-    ID_CREATE_COORDSYS      "Create a coordinate system."
-    ID_GROUP_ELEMENTSBYPID  "Group elements by property"
-    ID_GROUP_ELEMENTSBYCOLOUR "Group elements by colour"
-    ID_SELECTION_ELEMENTSBYPID 
-                            "Select elements with a specific property ID (PID)."
-    ID_SELECTION_ELEMENTSBYCOLOUR "Select elements with a specific colour."
-END
-
-STRINGTABLE
-BEGIN
-    ID_GROUP_ELEMENTSBYTYPE "Group elements by type"
-    ID_GROUP_NODEBYCOLOUR   "Group nodes by colour"
-    ID_GROUP_NODEBUOUTPUTSYS "Group nodes by output coordinate system"
-    ID_GROUP_NODEBYDEFINITIONSYSTEM 
-                            "Group nodes by definition coordinate system"
-    ID_GROUP_ELEMENTSBYMID  "Group elements by material"
-    ID_POST_DELETEALLRESULTSSETS "Delete all result sets."
-    ID_OPTIONS_REVERSECOLOURBAR "Reverse the colour bar."
-    ID_VIEW_ZOOMALL         "Zoom to fit all F.E. objects."
-    ID_SELECTION_INVERTSELECTION "Invert the Current Selection"
-END
-
-STRINGTABLE
-BEGIN
-    ID_TOOLS_COPYROTATE2D   "Copy and rotate objects in 2d."
-    ID_TOOLS_REFLECT2D      "Reflect selected objects in 2d."
-    ID_TOOLS_COPYTO         "Copy objects by picking locations"
-    ID_TOOLS_MOVETO         "Move objects by selecting locations"
-    ID_MESH_TETFROMSHELLBOUNDARY "Create tet mesh from shell boundary."
-END
-
-STRINGTABLE
-BEGIN
-    ID_CHECKS_FREEFACEDSP   "Element free face check"
-    ID_MESH_SHELLCOATSOLIDELEMENTS "Shell coat solid element free faces."
-    ID_CHECKS_FREEEDGEDISPLAY "Display the free edges of selected elements."
-    ID_MESH_QUADTOTRI       "Split quad elements into tri's."
-    ID_ANALYSIS_LOADSETS    "Create a load set."
-    ID_LOADSBC_BCSETS       "Create a boundary set."
-    ID_LOADSBC_TEMPERATURESETS "Create a temperature set."
-    ID_LOADSBC_CREATESTRUCTURALTEMP 
-                            "Create a structural temperature load on element."
-    ID_LOADSBC_CREATETHERMALTEMPBC "N/A yet"
-    ID_LOADSBC_CREATETHERMALNETTFLUXLOAD "N/A yet."
-    ID_SOLUTION_LISTSOLUTIONSEQUENCES "List the current solutions."
-    ID_SOLUTION_CREATESOLUTIONSEQUENCE "Create a solution."
-    ID_SOLUTION_CREATE      "Create a solution step."
-END
-
-STRINGTABLE
-BEGIN
-    ID_POST_SELECTRESULTS   "Select contour results."
-    ID_POST_LISTRESSET      "List all results sets."
-    ID_POST_LISTSELECTEDRESSET "List the selected results set."
-    ID_POST_CONTOURRAWDATA  "Contour plot."
-    ID_POST_TOGRESULTSLABELS "Turn on or off results labels."
-    ID_POST_DEFORMEDDISPLAY "Deformed display."
-    ID_POST_SELECTDEFORMEDRESULTS "Select deformed results."
-    ID_OPTIONS_DEFORMATIONSCALE "Change the deformation scale."
-    ID_ELEMENTTYPE_ROD      "Rod Element."
-END
-
-STRINGTABLE
-BEGIN
-    ID_LOADSBC_LISTLOADSETS "list all load sets."
-    ID_LOADSBC_LISTBOUNDARYSETS "List all boundary sets."
-    ID_LOADSBC_LISTTEMPERATURESETS "List all temperature sets."
-    ID_LOADSBC_CREATEACCELERATIONBODYLOAD 
-                            "Create an acceleration load on element."
-END
-
-STRINGTABLE
-BEGIN
-    ID_TOOLS_COLOUR         "Change the colour of objects."
-    ID_TOOLS_SETCURRENTMESH "Set the active F.E. mesh to work on."
-END
-
-STRINGTABLE
-BEGIN
-    ID_CREATE_NODESBETWEEN  "Create nodes between two sets of nodes."
-    ID_CREATE_NODESONCURVE  "Create nodes on curves."
-    ID_TOOLS_COPY           "Copy selected objects."
-    ID_TOOLS_WPMODE         "Change workplain between cartesian and cylindrical."
-    ID_TOOLS_WPALIGN        "Align the workplain to 3 point."
-    ID_TOOLS_WPGLOBAL       "Reset the workplain to global."
-    ID_VIEW_CONTROLPOINT    "Display surface control points."
-END
-
-STRINGTABLE
-BEGIN
-    ID_ELEMENTTYPE_TRANSLATIONALSPRING "Translational Spring."
-    ID_ELEMENTTYPE_ROTATIONALSPRING "Rotational Spring."
-    ID_ELEMENTMODIFIY_SPRINGCOORDSYSTEM 
-                            "Assign a coordinate system to selected spring elements."
-    ID_CHECKS_CHECKSHELLELEMENTASPECTRATION 
-                            "Check Shell Element Aspect Ration"
-END
-
-STRINGTABLE
-BEGIN
-    ID_CURVEMODIFY_WEIGHTTHIN "Change the curve weight to thin."
-    ID_CURVEMODIFY_WEIGHTMEDIUM "Change the curve weight to medium."
-    ID_CURVEMODIFY_WEIGHTLARGE "Change the curve weight to large."
-    ID_CURVEMODIFY_SOLID    "Change the curve line type to solid."
-    ID_CURVEMODIFY_DOT      "Change the curve line type to dotted."
-    ID_CURVEMODIFY_DASH     "Change the curve line type to dashed."
-    ID_CURVEMODIFY_CENTRE   "Change the curve line type to centre line."
-    ID_POINTMODIFY_CTRLPOINTWEIGHT 
-                            "Modify the NURBS weight of a curve control point."
-    ID_CIRCLE_CIRCLECENTREPOINT 
-                            "Create a circle by centre point and point on circumferance."
-END
-
-STRINGTABLE
-BEGIN
-    ID_GROUP_CREATEGROUP    "Create a new group."
-    ID_CREATE_FITTEDCURVE   "Create a curve fitted throu points."
-END
-
-STRINGTABLE
-BEGIN
-    ID_EDIT_DES             "De-select all objects."
-    ID_VIEW_DISPLAYALL      "Display all objects."
-    ID_EDIT_INFORMATION     "Show information for selected objects."
-    ID_EDIT_KEYIN           "Type in a translation for a command."
-    ID_EDIT_PICK            "Pick two objects to specify a translation vector for a command."
-    ID_EDIT_BETWEEN         "returns a location between two other locations."
-    ID_EDIT_TRANSLATEDFROM  "returns a location translated from another location."
-    ID_EDIT_FILTERNONE      "Set the object filter."
-    ID_EDIT_CANCEL          "Cancels a command."
-    ID_EDIT_DONE            "Finishes a command."
-    ID_VIEW_DISPLAYSELECTED "Display selected objects only."
-    ID_VIEW_DISPLAYGROUP    "Display the current group."
-END
-
-STRINGTABLE
-BEGIN
-    ID_VIEW_SHADED          "Display in shaded mode."
-    ID_VIEW_LINE            "Display in wire frame."
-    ID_VIEW_LOCATEEYE       "Locate the centre of rotation for dynamic viewing."
-    ID_VIEW_RESETVIEW       "Reset the view to global."
-    ID_GROUP_ADDTOGROUP     "Add selected objects to the current group."
-    ID_GROUP_REMOVEFROMGROUP "Remove selected objects to the current group."
-    ID_GROUP_ADDGROUP       "Add a group to the current group."
-    ID_GROUP_REMOVEGROUP    "Remove a group to the current group."
-    ID_GROUP_SETCURRENT     "Set the current group."
-END
-
-STRINGTABLE
-BEGIN
-    ID_GROUP_LISTGROUPS     "List all groups."
-    ID_CREATE_POINT         "Create a geometric point."
-    ID_LINE_LINE            "Create a line between two points."
-    ID_LINE_LINEX           "Create a line in workplain X direction."
-    ID_LINE_LINEY           "Create a line in workplain Y direction."
-    ID_LINE_LINEZ           "Create a line in workplain Z direction."
-END
-
-STRINGTABLE
-BEGIN
-    ID_CREATE_CURVE         "Create a curve by specifying control points."
-    ID_SURFACE_LOFT         "Loft a surface between curves."
-    ID_SURFACE_PLANAR       "Create a planar surface by boundary curves."
-    ID_CREATE_NODE          "Create nodes."
-    ID_CREATE_ELEMENT       "Create elements."
-    ID_ELEMENTTYPE_TRI      "Triangular Shell Element."
-    ID_ELEMENTTYPE_QUAD     "Quadrilateral Shell Element."
-    ID_ELEMENTTYPE_BRICK    "Brick Solid Element."
-    ID_ELEMENTTYPE_WEDGE    "Wedge Solid Element."
-    ID_ELEMENTTYPE_TET      "Tetrahedral Solid Element."
-    ID_CREATE_COPYNODES     "Copy selected nodes."
-    ID_CREATE_NODEMOVETO    "Move nodes from and to."
-END
-
-STRINGTABLE
-BEGIN
-    ID_EDIT_REPEATLASTCOMMAND "Repeat the last command."
-    ID_EDIT_IITERSECTION    "returns a location that is the intersection of two objects."
-    ID_EDIT_PROJECT         "Returns a location which is the projection of a location onto an object."
-    ID_CREATE_OFFSET        "Offset curves."
-    ID_CREATE_FILLET        "Create a fillet between two lines."
-    ID_LINE_LINEANGLE       "Create a line at a specified angle."
-    ID_CREATE_MAKECORNER    "Create a corner between two lines."
-    ID_CREATE_RECTANGLE     "Rectangle by two corner points."
-END
-
-STRINGTABLE
-BEGIN
-    ID_VISABILITY_ALLVISABLE "All visable."
-    ID_VIEW_LABELENTITIES   "Display labels on selected objects."
-END
-
-STRINGTABLE
-BEGIN
-    ID_CHECKS_CHECKTETCOLLAPSE "Check TET Collapse"
-    ID_VIEW_TOP             "Top View"
-    ID_VIEW_FRONT           "Front view XY"
-    ID_VIEW_LEFTXY          "Left View ZY"
-    ID_VIEW_BACK            "Back View -XY"
-    ID_VIEW_RIGHT           "Right View -ZY"
-    ID_VIEW_BOTTOMXZ        "Bottom View XZ"
-END
-
-STRINGTABLE
-BEGIN
-    IDS_STRING349           "Profection"
-    IDS_DRAW2               "Draw"
-END
-
-STRINGTABLE
-BEGIN
-    ID_VISABILITY_WORKPLANE "Toggle workplane visability"
-    ID_TOOLS_MEASUREANGLE   "Measure angle between 3 points"
-    ID_LOADSBC_CREATEROTATIONALBODYLOAD "Create rotational body load."
-END
-
-STRINGTABLE
-BEGIN
-    ID_PROPERTYMODIFY_EDITPROPERTYVALUES "Edit Properties Values"
-    ID_PROPERTY_EDITMATERIALVALUES "Edit Material Values"
-    ID_PROPERTY_BEAM33273   "Basic Beam "
-    ID_PROPERTY_BEAM_BASIC  "Create a General Beam Section by Entering All Properties"
-    ID_POST_LISTNODALRESULTS "List Nodal Results Values"
-    ID_CURVEMODIFY_INSERTKNOT "Insert Knot into Knot Vector"
-END
-
-STRINGTABLE
-BEGIN
-    ID_POST_ANIMATE         "Animate Display"
-    ID_POST_ANIMATENEG      "Animate Positive and Negative Toggle"
-    ID_POST_FRAMEDELAY      "Animation Frame Delay"
-    ID_POST_ANIMATIONFRAMES "No of Animation Frames"
-    ID_ELEMENTMODIFIY_BEAMENDARELEASE "Release end A degrees of Freedom"
-    ID_ELEMENTMODIFIY_BEAMENDBRELEASE "Release end B degrees of Freedom"
-    ID_OPTIONS_DEFORMATIONOFFSET "Relative Deformation Offset"
-    ID_POST_LISTRESULTSVECTORS "List Available Reults Vectors"
-    ID_TOOLS_EDITOBJECT     "Edit Object Values Via Data Table Editor"
-END
-
-STRINGTABLE
-BEGIN
-    ID_OPTIONS_VECTORSCALE  "Set Vector Length Scale Factor"
-    ID_POST_SELECTVECTORRESULTS "Select vector results for arrow display."
-    ID_POST_CLEARRESULTSVECTORS "Remove Results Vectors from Display"
-    ID_MESH_ADVANCINGFRONTSURFACEMESHTRI 
-                            "Advancing Front Surface Mesh on Surface"
-END
-
-STRINGTABLE
-BEGIN
-    ID_LINE_MULTILINE       "Multiple Continued Line"
-    ID_CHECKS_2DSECTIONPROPERTIESAIXXIYYETC 
-                            "Calculate 2d section properties of a group of 2d elements in XY plane (A,Ixx,Iyy,Izz)"
-    ID_MESHMANAGEMENT_LISTALLMESHES 
-                            "List all finite element models in the database."
-    ID_MESHMANAGEMENT_SETACTIVEMESH "Set the active mesh to work on."
-    ID_MESHMANAGEMENT_TOGGLEMESHVISABILITY "Toggle mesh visability"
-    ID_MESHMANAGEMENT_CREATENEWMESH "Create a new Finite Element mesh."
-    ID_MESHMANAGEMENT_DELETEMESH "Delete Finite Element mesh."
-    ID_VIEW_HIDEENTITIES    "Hide selected enties."
-    ID_VIEW_SHOWALLHIDDEN   "Shoe all hidden entities."
-    ID_POST_LISTRESPONSEDATA "List Frequency Response Data"
-    ID_MESH_MESHSIZEONSURFACE "Define mesh size on surface for Auto-Mesher"
-    ID_PARTMODIFY_EXTRACT   "Extract Surfaces, Curves , Points from PArt"
-END
-
-STRINGTABLE
-BEGIN
-    ID_CHECKS_TETCIRCUMSPHERE 
-                            "Calculate the circum radius and centre of a TET Element (Internal Check)"
-    ID_FILE_RUNSCRIPTFILE   "Run an M3d Script File"
-    ID_FEMTOOLS_MESHSIZEONCURVES "Beam Mesh on Curves"
-    ID_EDIT_REDO33332       "Redo Last"
-    ID_CURVETOOLS_TEXT      "Add Text"
-    ID_PROPERTY_PCOMP       "Create PCOMP Laminate Property"
-    ID_PROPERTY_DISPLAYLAMINATESTACK "Display Laminate Stack Sequence"
-    ID_PROPERTY_PBUSH       "Create a Nastran PBUSH spring property"
-    ID_MANIPULATION_ENVELOPEMAXIMUM 
-                            "Create an enveloped results set of maximum value"
-    ID_MANIPULATION_ENVELOPEMINIMUM 
-                            "Create an enveloped results set of maximum value"
-    ID_MANIPULATION_SCALE   "Scale a results set variable"
-    ID_MANIPULATION_DIVIDEINTO 
-                            "Divide a results set variable into a number used for RF calculations"
-END
-
-STRINGTABLE
-BEGIN
-    ID_PROPERTY_BEAM33344   "Create Beam T2 Section"
-    ID_PROPERTY_BEAM33345   "Create Beam Channel 2 Section"
-    ID_PROPERTY_BEAM_T2     "Create Beam T Sections (NASTRAN T2)"
-    ID_PROPERTY_BEAM_CHAN2  "Create Beam Channel Section (NASTRAN CHAN2)"
-    ID_PROPERTY_BEAM_I2     "Create Beam I Section (NASTRAN I2)"
-    ID_PROPERTY_BEAM33350   "Create Beam L Section (NOT IN NASTRAN)"
-    ID_PROPERTY_BEAM33351   "Create Beam I Section (NASTRAN I2)"
-    ID_PROPERTY_BEAM_L      "Create Beam L Section (NASTRAN I2)"
-    ID_ELEMENTMODIFIY_BEAMOFFSETINBEAMY 
-                            "Offset Beam Elements in Element Y direction"
-    ID_ELEMENTMODIFIY_BEAMOFFSETINBEAMZ 
-                            "Offset Beam Elements in Element Z direction"
-    ID_TOOLS_PLANET         "Insert Planet Sphere"
-    ID_POST_LISTRESPONSEDATAALLVARS 
-                            "List frequency response data for all variable"
-    ID_POST_LABELRESPONSEENTITIES 
-                            "Label Nodes  / Elements where response data is available."
-END
-
-STRINGTABLE
-BEGIN
-    ID_POST_GRAPHRESPONSEDATA "Graph response data."
-    ID_FEMTOOLS_SWEEPNODESTOBEAMS33361 "Sweep nodes into beam elements."
-    ID_FEMTOOLS_SWEEPNODESTOSHELLS33362 "Sweep nodes into shell elements."
-    ID_VIEW_HIGHLIGHTLIMIT  "Set the limit on the no of objects to highlight"
-    ID_SELECTION_RBECENTRENODES "Select RBE Centre Nodes"
-    ID_CHECKS_COUNTF        "Count No Off Selected Nodes and Elements etc"
-    ID_CURVEMODIFY_SPLITATPOINT "Split a Curve at a Point"
-    ID_ELEMENTMODIFIY_INTERSECTTRIELEMENTS 
-                            "Experimental, Intersect TRI elements."
-    ID_NODEMODIFY_EQUIVALENCELAB "Equivalence node labels between meshes"
-    ID_ELEMENTMODIFIY_COLOURBYPID "Colour elements according to PID"
-    ID_MESHMANAGEMENT_SETINCLUDEFILENO 
-                            "Set the include file no for selected items."
-    ID_ELEMENTMODIFIY_COLOURBYINCLUDEFILE "Colour Elements by Include File"
-    ID_CURVETOOLS_ORTHOSNAP "Toggle Orthogonal Line Drawing Mode."
-    ID_CURVEMODIFY_TRIM     "Trim a curve to another curve."
-END
-
-STRINGTABLE
-BEGIN
-    ID_LIST_GAPSBETWEENLABELS "List gaps between node and element labelling"
-    ID_LIST_GAPSBETWEENMATSANDPROPSLABELS 
-                            "Find gaps between materials and property labels"
-    ID_ELEMENTMODIFIY_INSERTSPRINGONRIGID 
-                            "Insert a spring element between rigid elements"
-    ID_FEMTOOLS_SWEEPEDGESOUTWARD 
-                            "Sweep shell edges outwards to create new rows of elements."
-END
-
-STRINGTABLE
-BEGIN
-    ID_CURVETOOLS_LINETHROUPTANDTANGENTTOCIRCLE 
-                            "Line Throu Pt and Tangent to Circle"
-    ID_CURVETOOLS_LINETANGENTTO2CIRCLES "Create a Line Tangent to 2 Circles"
-    ID_VIEW_TOGGLECONTROLPOINTVISABILITY 
-                            "Toggle On and Off All Objects Control Points"
-    ID_CURVEMODIFY_LAYERNUMBER "Set the Curve / Point Layer Number"
-    ID_SELECTION_SELECTCURVE "Select Curves/Points by Layer ID"
-END
-
-STRINGTABLE
-BEGIN
-    ID_VIEW_TOGGLEONCIRCLESTARTMARKERS 
-                            "Put an S at Beginning of Circle (Helps when using Trim)"
-    ID_TOOLS_INSERTBITMAPBACKGROUND "Insert a Bitmap Background Image"
-    ID_VIEW_TOGGLEON        "Toggle On and Off any Background Bitmap"
-    ID_QFILTER_NODES        "Pick Nodes Only"
-    ID_QFILTER_ELEMENTS     "Pick Elements Only"
-    ID_QFILTER_POINTS       "Pick Points Only"
-    ID_QFILTER_CURVES       "Pick Curves Only"
-    ID_QFILTER_SURFACE      "Pick Surfaces Only"
-    ID_QFILTER_ALL          "Pick All"
-END
-
-STRINGTABLE
-BEGIN
-    ID_DIMENSIONTOOLS_DIMSIZE "Set the size (text height) of dimensions."
-    ID_DIMENSIONTOOLS_ALIGNEDDIM "Create an aligned dimension."
-    ID_DIMENSIONTOOLS_LINEARDIM "Create a horizontal linear dimension."
-    ID_DIMENSIONTOOLS_HORIZONTALDIM "Create horizonatal linear dimension"
-    ID_DIMENSIONTOOLS_VERTICALDIM "Create vertical linear dimension"
-    ID_DIMENSIONTOOLS_LEADERTEXT "Create text with leader line."
-    ID_DIMENSIONTOOLS_RADIUSDIM "Create a radius dimension."
-    ID_DIMENSIONTOOLS_DIAMETERDIM "Create a diameter dimension."
-    ID_DIMENSIONTOOLS_ANGULARDIMBY3POINTS 
-                            "Create Angular Dimension by 3 Points"
-    ID_DIMENSIONTOOLS_DRAGDIM "Drag dimension to re-position."
-END
-
-STRINGTABLE
-BEGIN
-    ID_DIMENSIONTOOLS_CIRCLECENTREMARKER "Create circle centre marker."
-    ID_ELEMENTTYPE_BUSH     "BUSH 6 DOF Spring Element"
-    ID_EDIT_GLOBALPREFERENCES "Edit global stored parameters"
-    ID_LOADSBC_CREATETEMPD  "Create defualt model structural temperature."
-    ID_LOADSBC_CREATEGRAV   "Create Nastran GRAV card."
-END
-
-#endif    // English (United States) resources
-/////////////////////////////////////////////////////////////////////////////
-
-
-/////////////////////////////////////////////////////////////////////////////
-// English (United Kingdom) resources
-
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
-#pragma code_page(1252)
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Bitmap
-//
-
-IDR_DRAW                BITMAP                  "res\\toolbar1.bmp"
-
-IDR_CREATE              BITMAP                  "res\\bmp00001.bmp"
-
-IDR_EDIT                BITMAP                  "res\\bmp00002.bmp"
-
-IDR_FE                  BITMAP                  "res\\bmp00003.bmp"
-
-IDR_GROUP               BITMAP                  "res\\bmp00004.bmp"
-
-IDR_BC                  BITMAP                  "res\\bmp00006.bmp"
-
-IDR_ELTYPE              BITMAP                  "res\\bmp00007.bmp"
-
-IDR_POST                BITMAP                  "res\\bmp00008.bmp"
-
-IDR_PROJ                BITMAP                  "res\\bmp00009.bmp"
-
-IDR_UTILITIES           BITMAP                  "res\\bmp00005.bmp"
-
-IDR_QFILTER             BITMAP                  "res\\bmp00010.bmp"
-
-IDR_DIMS                BITMAP                  "res\\bmp00011.bmp"
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Toolbar
-//
-
-IDR_DRAW TOOLBAR 24, 24
-BEGIN
-    BUTTON      ID_VIEW_DISPLAYALL
-    BUTTON      ID_VIEW_DISPLAYSELECTED
-    BUTTON      ID_VIEW_SHADED
-    BUTTON      ID_VIEW_LINE
-    BUTTON      ID_VIEW_NODESOFF
-    BUTTON      ID_VIEW_ZOOMALL
-    BUTTON      ID_VIEW_RESETVIEW
-    BUTTON      ID_VIEW_LOCATEEYE
-    BUTTON      ID_VIEW_LABELENTITIES
-    BUTTON      ID_VISABILITY_WORKPLANE
-    BUTTON      ID_VIEW_TOGGLECONTROLPOINTVISABILITY
-    BUTTON      ID_VISABILITY_CURVESON
-    BUTTON      ID_SURFACES_SURFACESON
-    BUTTON      ID_VISABILITY_ALLVISABLE
-    BUTTON      ID_VISABILITY_COORDSON
-    BUTTON      ID_VISABILITY_NODEON
-    BUTTON      ID_VISABILITY_ELEMENTON
-    BUTTON      ID_VISABILITY_BOUNDARYCONDITIONS
-    BUTTON      ID_VIEW_DISPLAYSHELLTHICKNESS
-    BUTTON      ID_VIEW_DISPLAYELEMENTCOORDSYS
-    BUTTON      ID_VIEW_SURFACEDIRECTIONMARKERS
-END
-
-IDR_CREATE TOOLBAR 24, 24
-BEGIN
-    BUTTON      ID_CURVETOOLS_ORTHOSNAP
-    SEPARATOR
-    BUTTON      ID_CURVETOOLS_TEXT
-    BUTTON      ID_CREATE_POINT
-    BUTTON      ID_LINE_MULTILINE
-    BUTTON      ID_LINE_LINE
-    SEPARATOR
-    BUTTON      ID_LINE_LINEX
-    BUTTON      ID_LINE_LINEY
-    BUTTON      ID_LINE_LINEANGLE
-    BUTTON      ID_CURVETOOLS_LINETHROUPTANDTANGENTTOCIRCLE
-    SEPARATOR
-    BUTTON      ID_CURVETOOLS_LINETANGENTTO2CIRCLES
-    BUTTON      ID_CREATE_RECTANGLE
-    BUTTON      ID_CIRCLE_CIRCLECENRERADIUS
-    BUTTON      ID_CIRCLE_CIRCLECENTREPOINT
-    SEPARATOR
-    BUTTON      ID_CIRCLE_CIRCLE3POINTS
-    BUTTON      ID_CIRCLE_ARC3POINT
-    BUTTON      ID_CREATE_CURVE
-    BUTTON      ID_CREATE_FITTEDCURVE
-    BUTTON      ID_SURFACE_LOFT
-    SEPARATOR
-    BUTTON      ID_SURFACE_REVOLVE
-    SEPARATOR
-    BUTTON      ID_SURFACE_EXTRUDE
-    BUTTON      ID_SURFACE_PROJECTCURVE
-    BUTTON      ID_SURFACE_TRIMSURFACE
-    BUTTON      ID_SURFACE_PLANAR
-    BUTTON      ID_SURFACE_INTERNALTRIMLOOP
-    BUTTON      ID_SURFACE_SWEEP
-END
-
-IDR_EDIT TOOLBAR 24, 24
-BEGIN
-    BUTTON      ID_TOOLS_EDITOBJECT
-    BUTTON      ID_PROPERTYMODIFY_EDITPROPERTYVALUES
-    BUTTON      ID_PROPERTY_EDITMATERIALVALUES
-    BUTTON      ID_TOOLS_MOVETO
-    BUTTON      ID_TOOLS_COPYTO
-    BUTTON      ID_TOOLS_MOVE
-    BUTTON      ID_TOOLS_COPY
-    BUTTON      ID_TOOLS_COPYROTATE2D
-    BUTTON      ID_TOOLS_REFLECT2D
-    BUTTON      ID_TOOLS_ROTATEABOUT
-    BUTTON      ID_TOOLS_COPYROTATE
-    BUTTON      ID_TOOLS_ALIGN
-    BUTTON      ID_TOOLS_REFLECT
-    BUTTON      ID_TOOLS_SCALE
-    BUTTON      ID_CURVEMODIFY_SPLITATPOINT
-    BUTTON      ID_CURVEMODIFY_TRIM
-    BUTTON      ID_CREATE_OFFSET
-    BUTTON      ID_CREATE_FILLET
-    BUTTON      ID_CREATE_MAKECORNER
-    BUTTON      ID_TOOLS_COLOUR
-    BUTTON      ID_EDIT_INFORMATION
-    BUTTON      ID_TOOLS_MEASURE
-    BUTTON      ID_TOOLS_DELETE
-    BUTTON      ID_TOOLS_MEASUREANGLE
-END
-
-IDR_FE TOOLBAR 24, 24
-BEGIN
-    BUTTON      ID_TOOLS_SETCURRENTMESH
-    BUTTON      ID_EXPORT_CURRENTMESHTO
-    SEPARATOR
-    BUTTON      ID_CREATE_NODE
-    BUTTON      ID_CREATE_ELEMENT
-    BUTTON      ID_CREATE_NODEMOVETO
-    BUTTON      ID_CREATE_COPYNODES
-    BUTTON      ID_CREATE_NODESBETWEEN
-    BUTTON      ID_CREATE_NODESONCURVE
-    BUTTON      ID_CREATE_COORDSYS
-    BUTTON      ID_CREATE_COORDSYSLINE
-    BUTTON      ID_MESH_SWEEPELEMENTS
-    BUTTON      ID_MESH_MAPPEDSURFACEMESH
-    BUTTON      ID_MESH_MAPPEDTRIMESH
-    BUTTON      ID_MESHQND
-    BUTTON      ID_MESH_QUADTOTRI
-    BUTTON      ID_MESH_TETFROMSHELLBOUNDARY
-    BUTTON      ID_MESH_SHELLCOATSOLIDELEMENTS
-    BUTTON      ID_MESH_MESHSIZEONSURFACE
-    BUTTON      ID_MESH_ADVANCINGFRONTSURFACEMESHTRI
-END
-
-IDR_GROUP TOOLBAR 24, 24
-BEGIN
-    BUTTON      ID_GROUP_CREATEGROUP
-    BUTTON      ID_GROUP_LISTGROUPS
-    BUTTON      ID_GROUP_SETCURRENT
-    BUTTON      ID_VIEW_DISPLAYGROUP
-    BUTTON      ID_GROUP_PREVIOUSGRPUP
-    BUTTON      ID_GROUP_NEXTGROUP
-    BUTTON      ID_GROUP_ADDTOGROUP
-    BUTTON      ID_GROUP_REMOVEFROMGROUP
-    BUTTON      ID_GROUP_ADDGROUP
-    BUTTON      ID_GROUP_REMOVEGROUP
-    BUTTON      ID_GROUP_ELEMENTSBYPID
-    BUTTON      ID_GROUP_ELEMENTSBYMID
-    BUTTON      ID_GROUP_ELEMENTSBYCOLOUR
-    BUTTON      ID_GROUP_ELEMENTSBYTYPE
-    BUTTON      ID_GROUP_NODEBYCOLOUR
-    BUTTON      ID_GROUP_NODEBYDEFINITIONSYSTEM
-    BUTTON      ID_GROUP_NODEBUOUTPUTSYS
-    BUTTON      ID_GROUP_DELETEALLGROUPS
-END
-
-IDR_BC TOOLBAR 24, 24
-BEGIN
-    BUTTON      ID_ANALYSIS_LOADSETS
-    BUTTON      ID_LOADSBC_BCSETS
-    BUTTON      ID_LOADSBC_TEMPERATURESETS
-    BUTTON      ID_SOLVER_CREATERESTRAINT
-    BUTTON      ID_SOLVER_CREATEFORCE
-    BUTTON      ID_ANALYSIS_CREATEMOMENT
-    BUTTON      ID_ANALYSIS_CREATEPRESSURE
-    BUTTON      ID_LOADSBC_CREATEACCELERATIONBODYLOAD
-    BUTTON      ID_LOADSBC_CREATEROTATIONALBODYLOAD
-    BUTTON      ID_LOADSBC_CREATESTRUCTURALTEMP
-END
-
-IDR_ELTYPE TOOLBAR 24, 24
-BEGIN
-    BUTTON      ID_ELEMENTTYPE_ROD
-    BUTTON      ID_ELEMENTTYPE_BEAM
-    BUTTON      ID_ELEMENTTYPE_TRI
-    BUTTON      ID_ELEMENTTYPE_QUAD
-    BUTTON      ID_ELEMENTTYPE_TET
-    BUTTON      ID_ELEMENTTYPE_WEDGE
-    BUTTON      ID_ELEMENTTYPE_BRICK
-    BUTTON      ID_ELEMENTTYPE_TRANSLATIONALSPRING
-    BUTTON      ID_ELEMENTTYPE_ROTATIONALSPRING
-    BUTTON      ID_ELEMENTTYPE_MASS
-    BUTTON      ID_ELEMENTTYPE_RIGID
-    BUTTON      ID_ELEMENTTYPE_BUSH
-END
-
-IDR_POST TOOLBAR 24, 24
-BEGIN
-    BUTTON      ID_POST_SELECTDEFORMEDRESULTS
-    BUTTON      ID_POST_SELECTRESULTS
-    BUTTON      ID_POST_DEFORMEDDISPLAY
-    BUTTON      ID_POST_CONTOURRAWDATA
-    BUTTON      ID_POST_SELECTVECTORRESULTS
-    BUTTON      ID_OPTIONS_VECTORSCALE
-    BUTTON      ID_POST_CLEARRESULTSVECTORS
-    BUTTON      ID_POST_ANIMATE
-    BUTTON      ID_POST_ANIMATIONFRAMES
-    BUTTON      ID_POST_FRAMEDELAY
-    BUTTON      ID_POST_ANIMATENEG
-    BUTTON      ID_OPTIONS_DEFORMATIONSCALE
-    BUTTON      ID_OPTIONS_REVERSECOLOURBAR
-    BUTTON      ID_OPTIONS_SETCOLOURBAR
-    BUTTON      ID_POST_TOGRESULTSLABELS
-    BUTTON      ID_POST_LISTNODALRESULTS
-    BUTTON      ID_POST_LISTELEMENTRESULT
-    BUTTON      ID_POST_DELETEALLRESULTSSETS
-END
-
-IDR_PROJ TOOLBAR 24, 24
-BEGIN
-    BUTTON      ID_PROJWP
-    BUTTON      ID_PROJ_BOTTOMXZ
-    BUTTON      ID_PROJ_FRONT
-    BUTTON      ID_PROJ_TOP
-    BUTTON      ID_PROJ_LEFTXY
-    BUTTON      ID_PROJ_BACK
-    BUTTON      ID_PROJ_RIGHT
-    BUTTON      ID_PROJSO1
-    BUTTON      ID_PROPISO2
-END
-
-IDR_UTILITIES TOOLBAR 24, 24
-BEGIN
-    BUTTON      ID_NODEMODIFY_CHANGEXORDINATE
-    BUTTON      ID_NODEMODIFY_CHANGEYORDINATE
-    BUTTON      ID_NODEMODIFY_CHANGEZORDINATE
-    BUTTON      ID_CHECKS_MERGENODES
-    BUTTON      ID_CHECKS_FREEEDGEDISPLAY
-END
-
-IDR_QFILTER TOOLBAR 24, 24
-BEGIN
-    BUTTON      ID_QFILTER_NODES
-    BUTTON      ID_QFILTER_ELEMENTS
-    BUTTON      ID_QFILTER_POINTS
-    BUTTON      ID_QFILTER_CURVES
-    BUTTON      ID_QFILTER_SURFACE
-    BUTTON      ID_QFILTER_ALL
-END
-
-IDR_DIMS TOOLBAR 24, 24
-BEGIN
-    BUTTON      ID_DIMENSIONTOOLS_DIMSIZE
-    BUTTON      ID_DIMENSIONTOOLS_ALIGNEDDIM
-    BUTTON      ID_DIMENSIONTOOLS_HORIZONTALDIM
-    BUTTON      ID_DIMENSIONTOOLS_VERTICALDIM
-    BUTTON      ID_DIMENSIONTOOLS_RADIUSDIM
-    BUTTON      ID_DIMENSIONTOOLS_DIAMETERDIM
-    BUTTON      ID_DIMENSIONTOOLS_ANGULARDIMBY3POINTS
-    SEPARATOR
-    BUTTON      ID_DIMENSIONTOOLS_LEADERTEXT
-    BUTTON      ID_DIMENSIONTOOLS_DRAGDIM
-    BUTTON      ID_DIMENSIONTOOLS_CIRCLECENTREMARKER
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Dialog
-//
-
 IDD_DBar DIALOGEX 0, 0, 317, 93
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
@@ -1869,12 +1101,59 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "M3d Bespoke Engineering Solutions"
+            VALUE "FileDescription", "M3d Model File"
+            VALUE "FileVersion", "5.0"
+            VALUE "InternalName", "M3da.exe"
+            VALUE "LegalCopyright", "M3d Bespoke Enginnering Solutions.  All rights reserved."
+            VALUE "OriginalFilename", "M3da.exe"
+            VALUE "ProductName", "M3d"
+            VALUE "ProductVersion", "6.4"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // DESIGNINFO
 //
 
 #ifdef APSTUDIO_INVOKED
 GUIDELINES DESIGNINFO
 BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 311
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+    END
+
     IDD_DBar, DIALOG
     BEGIN
         LEFTMARGIN, 7
@@ -1981,6 +1260,11 @@ END
 // AFX_DIALOG_LAYOUT
 //
 
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
 IDD_ENTEDITOR AFX_DIALOG_LAYOUT
 BEGIN
     0
@@ -2057,128 +1341,215 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_CREATE_NODESBETWEEN  "Between Nodes"
-    ID_CREATE_NODESONCURVE  "Node On Curve"
-    ID_TOOLS_MOVE           "[Edit] Move\n[Edit] Move"
-    ID_TOOLS_COPY           "[Edit] Copy\n[Edit] Copy"
+    ID_CREATE_NODESBETWEEN  "Create FEA nodes in between nodes\n[FE] Node In Between"
+    ID_CREATE_NODESONCURVE  "Create FEA nodes on curve\n[FE] Node On Curve"
+    ID_TOOLS_MOVE           "Move selection\n[Edit] Move"
+    ID_TOOLS_COPY           "Copy selection\n[Edit] Copy"
+    ID_LINE_LINEY2          "Create a line in workplain Y direction."
+    ID_LINE_LINEZ2          "Create a line in workplain Z direction."
+    ID_CREATE_CURVE2        "Create a curve by specifying control points."
+    ID_SURFACE_LOFT2        "Loft a surface between curves."
+    ID_SURFACE_PLANAR2      "Create a planar surface by boundary curves."
+    ID_CREATE_NODE2         "Create nodes."
+    ID_CREATE_ELEMENT2      "Create elements."
     ID_PointCR              "Create Point"
+    ID_ELEMENTTYPE_TRI2     "Triangular Shell Element."
+    ID_ELEMENTTYPE_QUAD2    "Quadrilateral Shell Element."
+    ID_ELEMENTTYPE_BRICK2   "Brick Solid Element."
+    ID_ELEMENTTYPE_WEDGE2   "Wedge Solid Element."
 END
 
 STRINGTABLE
 BEGIN
-    ID_GROUP_LISTGROUPS     "List Groups"
-    ID_VIEW_NODESOFF        "[Draw] Nodes Off\n[Draw] Nodes Off"
-    ID_CREATE_POINT         "[Create] Points\n[Create] Points"
-    ID_LINE_LINE            "[Create] Line\n[Create] Line"
-    ID_LINE_LINEX           "[Create] Line in X\n[Create] Line in X"
-    ID_LINE_LINEY           "[Create] Line in Y\n[Create] Line in X"
+    ID_GROUP_LISTGROUPS     "List groups\n[Group] List"
+    ID_VIEW_LOCATEEYE2      "Locate the centre of rotation for dynamic viewing."
+    ID_VIEW_RESETVIEW2      "Reset the view to global."
+    ID_GROUP_ADDTOGROUP2    "Add selected objects to the current group."
+    ID_GROUP_REMOVEFROMGROUP2 "Remove selected objects to the current group."
+    ID_GROUP_ADDGROUP2      "Add a group to the current group."
+    ID_VIEW_NODESOFF        "Disable display of nodes\n[Draw] Nodes Off"
+    ID_GROUP_REMOVEGROUP2   "Remove a group to the current group."
+    ID_GROUP_SETCURRENT2    "Set the current group."
+    ID_CREATE_POINT         "Create Points\n[Create] Points"
+    ID_GROUP_LISTGROUPS2    "List all groups."
+    ID_LINE_LINE            "Create line\n[Create] Line"
+    ID_LINE_LINEX           "Create line along the X axis\n[Create] Line in X"
+    ID_LINE_LINEY           "Create line along the Y axis\n[Create] Line in Y"
+    ID_CREATE_POINT2        "Create a geometric point."
     ID_CREATE_CIRCLE        "Create Circle"
 END
 
 STRINGTABLE
 BEGIN
-    ID_VIEW_DISPLAYALL      "[Draw] Display All\n[Draw] Display All\n"
-    ID_EDIT_INFORMATION     "[Edit] Infomation\n[Edit] Infomation"
-    ID_VIEW_DISPLAYSELECTED "[Draw] Display Selected\n[Draw] Display Selected"
-    ID_VIEW_DISPLAYGROUP    "Display Group"
+    ID_EDIT_DES             "De-select all objects."
+    ID_VIEW_DISPLAYALL      "Display all\n[Draw] Display All\n"
+    ID_EDIT_INFORMATION     "Infomation\n[Edit] Infomation"
+    ID_VIEW_DISPLAYALL2     "Display all objects."
+    ID_EDIT_INFORMATION2    "Show information for selected objects."
+    ID_EDIT_KEYIN2          "Type in a translation for a command."
+    ID_EDIT_PICK2           "Pick two objects to specify a translation vector for a command."
+    ID_EDIT_BETWEEN2        "returns a location between two other locations."
+    ID_EDIT_TRANSLATEDFROM2 "returns a location translated from another location."
+    ID_EDIT_FILTERNONE2     "Set the object filter."
+    ID_VIEW_DISPLAYSELECTED "Display only selected objects\n[Draw] Display Selected"
+    ID_VIEW_DISPLAYGROUP    "Display active group\n[Group] Display Active"
 END
 
 STRINGTABLE
 BEGIN
-    ID_VIEW_SHADED          "[Draw] Draw Shaded\n[Draw] Draw Shaded"
-    ID_VIEW_LINE            "[Draw] Draw Wireframe\n[Draw] Draw Wireframe"
+    ID_VIEW_SHADED          "Use shaded rendering mode\n[Draw] Draw Shaded"
+    ID_VIEW_LINE            "Use wireframe rendering mode\n[Draw] Draw Wireframe"
     ID_VIEW_LOCATEEYE       "[Draw] Set Eye\n[Draw] Set Eye"
-    ID_VIEW_RESETVIEW       "[Draw] Reset View\n[Draw] Reset View"
+    ID_VIEW_RESETVIEW       "Reset view\n[Draw] Reset View"
+    ID_EDIT_CANCEL2         "Cancels a command."
+    ID_EDIT_DONE2           "Finishes a command."
     ID_GROUP_DISPLAYGROUP   "Display Current Group"
-    ID_GROUP_ADDTOGROUP     "Add Selected Items To Group"
-    ID_GROUP_REMOVEFROMGROUP "Remove Selected Items From Group"
-    ID_GROUP_ADDGROUP       "Add a Group"
-    ID_GROUP_REMOVEGROUP    "Remove a Group"
-    ID_GROUP_SETCURRENT     "Set Active Group"
+    ID_GROUP_ADDTOGROUP     "Add selection to group\n[Group] Add"
+    ID_GROUP_REMOVEFROMGROUP 
+                            "Remove selected items from group\n[Group] Remove"
+    ID_VIEW_DISPLAYSELECTED2 "Display selected objects only."
+    ID_VIEW_DISPLAYGROUP2   "Display the current group."
+    ID_VIEW_SHADED2         "Display in shaded mode."
+    ID_VIEW_LINE2           "Display in wire frame."
+    ID_GROUP_ADDGROUP       "Add items in a group to active\n[Group] Add From Group"
+    ID_GROUP_REMOVEGROUP    "Remove items in a group from active\n[Group] Remove From Group"
+    ID_GROUP_SETCURRENT     "Set active group\n[Group] Set Active"
 END
 
 STRINGTABLE
 BEGIN
-    ID_CREATE_CURVE         "[Create] Curve\n[Create] Curve"
-    ID_SURFACE_LOFT         "[Create] Loft Surface\n[Create] Loft Surface"
-    ID_SURFACE_PLANAR       "[Create] Surface by Boundary Curves\n[Create] Surface by Boundary Curves"
-    ID_SURFACE_REVOLVE      "[Create] Revolve Surface About Y Axis\n[Create] Revolve Surface About Y Axis"
-    ID_SURFACE_EXTRUDE      "[Create] Surface Extrude\n[Create] Surface Extrude"
-    ID_CREATE_NODE          "Create Nodes"
-    ID_CREATE_ELEMENT       "Create Elements"
-    ID_ELEMENTTYPE_TRI      "Set default element type to TRI."
-    ID_ELEMENTTYPE_QUAD     "Set default element type to QUAD."
-    ID_ELEMENTTYPE_BRICK    "Set default element type to BRICK."
-    ID_ELEMENTTYPE_WEDGE    "Set default element type to WEDGE."
-    ID_ELEMENTTYPE_TET      "Set default element type to TET."
-    ID_CREATE_COPYNODES     "Copy Nodes"
-    ID_CREATE_NODEMOVETO    "Node Move To"
+    ID_CREATE_CURVE         "Create curve\n[Create] Curve"
+    ID_LINE_LINE2           "Create a line between two points."
+    ID_SURFACE_LOFT         "Loft surface\n[Create] Loft Surface"
+    ID_SURFACE_PLANAR       "Create surface by boundary curves\n[Create] Surface by Boundary Curves"
+    ID_SURFACE_REVOLVE      "Revolve surface about Y axis\n[Create] Revolve Surface About Y Axis"
+    ID_SURFACE_EXTRUDE      "Extrude surface\n[Create] Surface Extrude"
+    ID_CREATE_NODE          "Create FEA nodes\n[FE] Create Nodes"
+    ID_CREATE_ELEMENT       "Create FEA elements\n[FE] Create elements"
+    ID_LINE_LINEX2          "Create a line in workplain X direction."
+    ID_ELEMENTTYPE_TRI      "Set default element type to TRI\n[Element] TRI"
+    ID_ELEMENTTYPE_QUAD     "Set default element type to QUAD\n[Element] QUAD"
+    ID_ELEMENTTYPE_BRICK    "Set default element type to BRICK\n[Element] BRICK"
+    ID_ELEMENTTYPE_WEDGE    "Set default element type to WEDGE\n[Element] WEDGE"
+    ID_ELEMENTTYPE_TET      "Set default element type to TET\n[Element] TET"
+    ID_CREATE_COPYNODES     "Copy FEA nodes\n[FE] Copy"
+    ID_CREATE_NODEMOVETO    "Move FEA nodes\n[FE] Move To"
 END
 
 STRINGTABLE
 BEGIN
-    ID_TOOLS_COLOUR         "[Edit] Change Colour\n[Edit] Change Colour"
-    ID_TOOLS_SETCURRENTMESH "Set Current Mesh"
+    ID_ELEMENTTYPE_TET2     "Tetrahedral Solid Element."
+    ID_CREATE_COPYNODES2    "Copy selected nodes."
+    ID_CREATE_NODEMOVETO2   "Move nodes from and to."
+    ID_CREATE_NODESBETWEEN2 "Create nodes between two sets of nodes."
+    ID_CREATE_NODESONCURVE2 "Create nodes on curves."
+    ID_TOOLS_COPY2          "Copy selected objects."
+    ID_TOOLS_WPMODE2        "Change workplain between cartesian and cylindrical."
+    ID_TOOLS_WPALIGN2       "Align the workplain to 3 point."
+    ID_TOOLS_WPGLOBAL2      "Reset the workplain to global."
+    ID_VIEW_CONTROLPOINT2   "Display surface control points."
+    ID_TOOLS_COLOUR         "Change selectiong colour\n[Edit] Colour"
+    ID_TOOLS_COLOUR2        "Change the colour of objects."
+    ID_TOOLS_SETCURRENTMESH "Select Mesh\n[FE] Set Current Mesh"
+    ID_TOOLS_SETCURRENTMESH2 "Set the active F.E. mesh to work on."
 END
 
 STRINGTABLE
 BEGIN
-    ID_EXPORT_CURRENTMESHTO "Export Current Mesh"
-    ID_GROUP_CREATEGROUP    "Create New Group"
-    ID_TOOLS_DELETE         "[Edit] Delete\n[Edit] Delete"
-    ID_CREATE_FITTEDCURVE   "[Create] Fitted Curve\n[Create] Fitted Curve"
+    ID_EXPORT_CURRENTMESHTO "Export Current Mesh\n[FE] Export Mesh"
+    ID_GROUP_CREATEGROUP    "Create a new group\n[Group] New"
+    ID_GROUP_CREATEGROUP2   "Create a new group."
+    ID_TOOLS_DELETE         "Delete\n[Edit] Delete"
+    ID_CREATE_FITTEDCURVE   "Create a fitted curve\n[Create] Fitted Curve"
+    ID_CREATE_FITTEDCURVE2  "Create a curve fitted throu points."
 END
 
 STRINGTABLE
 BEGIN
-    ID_CREATE_OFFSET        "[Edit] Offset\n[Edit] Offset"
-    ID_CREATE_FILLET        "[Edit] Fillet\n[Edit] Fillet"
-    ID_LINE_LINEANGLE       "[Create] Line at Angle\n[Create] Line at Angle"
-    ID_CREATE_MAKECORNER    "[Edit] Make Corner\n[Edit] Make Corner"
+    ID_EDIT_REPEATLASTCOMMAND "Repeat the last command."
+    ID_EDIT_IITERSECTION    "returns a location that is the intersection of two objects."
+    ID_EDIT_PROJECT         "Returns a location which is the projection of a location onto an object."
+    ID_CREATE_OFFSET        "Offset selection\n[Edit] Offset"
+    ID_CREATE_FILLET        "Create a fillet\n[Edit] Fillet"
+    ID_CREATE_OFFSET2       "Offset curves."
+    ID_CREATE_FILLET2       "Create a fillet between two lines."
+    ID_LINE_LINEANGLE       "Create line at an angle\n[Create] Line at Angle"
+    ID_CREATE_MAKECORNER    "Make intersecting lines into a corner\n[Edit] Make Corner"
     ID_BUTTON32890          "Make Corner"
-    ID_CREATE_RECTANGLE     "[Create] Rectangle\n[Create] Rectangle"
+    ID_LINE_LINEANGLE2      "Create a line at a specified angle."
+    ID_CREATE_RECTANGLE     "Draw a rectangle by selecting two opposite corners\n[Create] Rectangle"
     ID_BUTTON32893          "Create Rectangle"
+    ID_CREATE_MAKECORNER2   "Create a corner between two lines."
 END
 
 STRINGTABLE
 BEGIN
-    ID_SURFACE_PROJECTCURVE "[Create] Project Curve onto Surface\n[Create] Surface Extrude"
-    ID_SURFACE_TRIMSURFACE  "[Create] Surface external trim loop\n[Create] Surface external trim loop"
+    ID_SURFACE_PROJECTCURVE "Project curve onto surface\n[Create] Curve Surface Project"
+    ID_SURFACE_TRIMSURFACE  "Surface external trim loop\n[Create] Surface external trim loop"
     ID_SURFACE_INTERNALTRIMLOOP 
-                            "[Create] Surface Internal Trim Loop\n[Create] Surface Internal Trim Loop"
-    ID_CREATE_COORDSYS      "Create Coordinate System"
-    ID_GROUP_ELEMENTSBYPID  "Add Elements by PID"
+                            "Trim surface from internal loop\n[Create] Surface Internal Trim Loop"
+    ID_CREATE_COORDSYS      "Create FEA coordinate system\n[FE] Create Coordinate System"
+    ID_CREATE_COORDSYS2     "Create a coordinate system."
+    ID_GROUP_ELEMENTSBYPID  "Group elements by PID\n[Group] By PID"
+    ID_GROUP_ELEMENTSBYPID2 "Group elements by property"
+    ID_GROUP_ELEMENTSBYCOLOUR "Group elements by colour\n[Group] By Colour"
     ID_BUTTON32909          "Delete AllGroups"
+    ID_SELECTION_ELEMENTSBYPID 
+                            "Select elements with a specific property ID (PID)."
+    ID_SELECTION_ELEMENTSBYCOLOUR "Select elements with a specific colour."
 END
 
 STRINGTABLE
 BEGIN
-    ID_CREATE_COORDSYSLINE  "Create a Line of Coord Systems"
-    ID_TOOLS_MEASURE        "[Edit] Linear Measure\n[Edit] Linear Measure"
+    ID_SELECTION_NODESBYCOLOUR "Select nodes with a specific colour."
+    ID_SELECTION_RELATEDTO  "select objects related to other objects."
+    ID_SELECTION_ELEMENTSBYTYPE "Select elements with a specific type."
+    ID_CREATE_COORDSYSLINE  "Create a line of FEA coordinate systems\n[FE] Coord Systems Line"
+    ID_CREATE_COORDSYSLINE2 "Create multiple coordinate systems in a line normal to elements."
+    ID_TOOLS_MEASURE        "Measure distance between points\n[Edit] Linear Measure"
     ID_BUTTON32921          "Measure Linear Distance"
+    ID_TOOLS_MEASURE2       "Measure the distaance between 2 objects."
+    ID_ELEMENTMODIFIY_PID   "Modify the selected element property IDs (PIDs)"
+    ID_NODEMODIFY_OUTPUTCOORDSYS "Change the nodal output coordinate system."
+    ID_EDIT_RELATEDTO       "Pick objects that are related to other objects (eg Nodes that are related to Elements)."
+    ID_EDIT_LABEL           "Select objects by specifying their label."
 END
 
 STRINGTABLE
 BEGIN
+    ID_SELECTION_ELEMENTSBYMATERIAL 
+                            "Select elements with a specific material ID."
     MappedMesh              "Mapped Mesh"
-    ID_MESH_MAPPEDSURFACEMESH "Mapped Quad Mesh on Surface"
-    ID_MESH_MAPPEDTRIMESH   "Mapped Tri Mesh on Surface"
-    ID_MESH_SWEEPELEMENTS   "Sweep Elements"
-    ID_VISABILITY_NODEON    "[Draw] Toggle Node Visibility\n[Draw] Toggle Node Visibility"
-    ID_VISABILITY_ELEMENTON "[Draw] Toggle Element Visibility\n[Draw] Toggle Element Visibility"
-    ID_VISABILITY_CURVESON  "[Draw] Display Curves\n[Draw] Display Curves"
+    ID_MESH_MAPPEDSURFACEMESH 
+                            "Create mesh of QUADs on surface\n[FE] QUAD Mesh on Surface"
+    ID_MESH_MAPPEDSURFACEMESH2 "Create a mapped quad mesh on surface."
+    ID_MESH_MAPPEDTRIMESH   "Create mesh of TRIs on surface\n[FE] TRI Mesh on Surface"
+    ID_MESH_MAPPEDTRIMESH2  "Create a mapped tri mesh on surface."
+    ID_CHECKS_COINCIDENTNODES "Check current mesh for coincident nodes."
+    ID_MESH_SWEEPELEMENTS   "Sweep FEA elements\n[FE] Sweep Elements"
+    ID_MESH_SWEEPELEMENTS2  "Sweep elements."
+    ID_VIEW_SHADEDEDGES2    "Display shaded edges of elements."
+    ID_VISABILITY_NODEON    "Toggle display of nodes\n[Draw] Toggle Node Visibility"
+    ID_VISABILITY_ELEMENTON "Toggle display of elements\n[Draw] Toggle Element Visibility"
+    ID_VISABILITY_NODEON2   "Toggle Node Visability"
+    ID_VISABILITY_CURVESON  "Toggle display of curves\n[Draw] Display Curves"
 END
 
 STRINGTABLE
 BEGIN
-    ID_VISABILITY_ALLVISABLE "[Draw] All Visible\n[Draw] All Visible"
-    ID_VIEW_LABELENTITIES   "[Draw] Label Selected Entities \n[Draw] Label Selected Entities"
+    ID_VISABILITY_ELEMENTON2 "Toggle Element Visability"
+    ID_VISABILITY_ALLVISABLE "Make all objects visible\n[Draw] All Visible"
+    ID_VIEW_NODESASK2       "Displat the nodes as *"
+    ID_VIEW_LABELENTITIES   "Label selected entities\n[Draw] Label Selected Entities"
     ID_QWANTA_IMPORTCATALOGUE "Import Parts Catalogue"
     ID_QWANTA_IMPORTSECTIONTABLE "Import Sections Table"
     ID_QWANTA_IMPORTWAVEGUIDE "Import Waveguide Report"
     ID_QWANTA_1D            "Toggle 1d 2d Meshing"
     ID_QWANTA_MESHDENSITYTOGGLE "Toggle Mesh Density Settings"
+    ID_VISABILITY_CURVESON2 "Toggle Curve Visability"
     ID_QWANTA_GENERATEMESH  "Generate Mesh on Waveguides"
+    ID_VISABILITY_ALLVISABLE2 "All visable."
+    ID_VIEW_LABELENTITIES2  "Display labels on selected objects."
     ID_QWANTA_DISPLAYCATALOGUE "Display Catalogue"
     ID_CATALOGUEDISPLAY_DISPLAYCATALUGUE "Display Catalogue"
     ID_CATALOGUEDISPLAY_DISPLAYNEXT "Display Next in Catalogue"
@@ -2187,56 +1558,128 @@ END
 STRINGTABLE
 BEGIN
     ID_CATALOGUEDISPLAY_DISPLAYPREVIOUS "Display Previous in Catalogue"
+    ID_VISABILITY_ASSEMBLIES "Toggle Assembly Visability"
     ID_QWANTA_BUILDAMDEXPORT "Build and Export Mesh"
-    ID_TOOLS_ALIGN          "[Edit] Align Objects\n[Edit] Align Objects"
+    ID_GROUP_DELETEALLGROUPS "Delete all groups\n[Group] Delete All"
+    ID_VIEW_WHITE           "Set the background colour to white."
+    ID_TOOLS_ALIGN          "Align selection\n[Edit] Align Objects"
+    ID_TOOLS_ALIGN2         "Align a object in 3d."
+    ID_TOOLS_WPSIZE2        "Set the size of the workplain."
 END
 
 STRINGTABLE
 BEGIN
-    ID_TOOLS_ROTATEABOUT    "[Edit] Rotate About Vector\n[Edit] Rotate About Vector"
+    ID_TOOLS_ROTATEABOUT    "Rotate selection about vector\n[Edit] Rotate About Vector"
+    ID_TOOLS_ROTATEBYANGLES2 "Rotate an object by angles."
+    ID_TOOLS_ROTATEABOUT2   "Rotate objects about an axis."
+    ID_TOOLS_COPYROTATE     "Copy and rotate selected objects\n[Edit] Copy and Rotate"
     ID_BUTTON32980          "Copy and Rotate"
-    ID_TOOLS_SCALE          "[Edit] Scale Objects\n[Edit] Scale Objects"
-    ID_TOOLS_REFLECT        "[Edit] Reflect Objects\n[Edit] Reflect Objects"
-    ID_ELEMENTTYPE_RIGID    "Set defualt element type to RIGID SPIDER."
+    ID_TOOLS_SCALE          "Scale selection\n[Edit] Scale"
+    ID_TOOLS_REFLECT        "Reflect selection\n[Edit] Reflect"
+    ID_TOOLS_SCALE2         "Scale selected objects."
+    ID_TOOLS_REFLECT2       "Reflect selected objects."
+    ID_TOOLS_LISTALLPROPERTIES "List all properties in current mesh"
+    ID_EXPORT_CURRENTMESTTONAS "Export current mesh to Nastran"
+    ID_NODEMODIFY_DEFINITIONCOORDSYS 
+                            "Change the nodal definition coordinate system."
+    ID_ELEMENTTYPE_RIGID    "Set default element type to RIGID SPIDER\n[Element] RIGID SPIDER"
+    ID_ELEMENTTYPE_RIGID2   "Rigid Spider Element."
 END
 
 STRINGTABLE
 BEGIN
-    ID_CHECKS_MERGENODES    "[Utils] Merge Coincident Nodes\n[Utils] Merge Coincident Nodes"
-    ID_SURFACE_SWEEP        "[Create] Sweep curves into surfaces\n[Create] Sweep curves into surfaces"
+    ID_PROPERTY_BEAMBOX     "Create Beams Box Section (NASTRAN BOX)"
+    ID_MATERIAL_ORTHOTROPIC "Create Orthotropic Material (MAT8) not available in M3d solves"
+    ID_PROPERTYMODIFY_CHANGEMATERIAL 
+                            "Change the material assigned to a property."
+    ID_QWANTA_MERGEBOUNDARIES "Merge the sweep boundaries"
+    ID_CHECKS_MERGENODES    "Merge coincident nodes\n[Utils] Merge Coincident Nodes"
+    ID_CHECKS_MERGENODES2   "Merge coincident nodes (1 pair at a time)."
+    ID_SURFACE_SWEEP        "Sweep curves into surfaces\n[Create] Sweep curves into surfaces"
+    ID_MESH_BUILDASSEMBLYMESH2 
+                            "Build a mesh from an assembly of other meshes."
+    ID_SOLVER_SOLVE         "Solve current model - linear static."
+    ID_SOLVER_CREATEFORCE   "Create a force on node\n[BC] Force"
 END
 
 STRINGTABLE
 BEGIN
-    ID_SURFACES_SURFACESON  "[Draw] Display Surfaces\n[Draw] Display Surfaces"
+    ID_SOLVER_CREATERESTRAINT "Create a nodal restraint\n[BC] Nodal Restraint"
+    ID_SURFACESON_SURFACECURVES "Display curves on surfaces"
+    ID_SURFACES_SURFACESON  "Toggle display of surfaces\n[Draw] Display Surfaces"
+    ID_SURFACES_SURFACESON2 "Toggle Surface Visability"
     ID_CIRCLE_CIRCLECENRERADIUS 
-                            "[Create] Circle centre and radius\n[Create] Circle centre and radius"
-    ID_CIRCLE_CIRCLE3POINTS "[Create] Circle through 3 points\n[Create] Circle through 3 points"
-    ID_CIRCLE_ARC3POINT     "[Create] Arc through 3 points\n[Create] Arc through 3 points"
+                            "Create circle by selecting a centre point and radius\n[Create] Circle centre and radius"
+    ID_CIRCLE_CIRCLE3POINTS "Create circle through three points\n[Create] Circle through 3 points"
+    ID_CIRCLE_ARC3POINT     "Create arc passing through three points\n[Create] Arc through 3 points"
+    ID_VISABILITY_POINTSON2 "Toggle Point Visability"
+    ID_CIRCLE_CIRCLECENRERADIUS2 "Create a circle by centre and radius."
+    ID_CIRCLE_CIRCLE3POINTS2 "Create a circle throu 3 points."
+    ID_CIRCLE_ARC3POINT2    "Create an arc throu 3 points."
+    ID_SELECTION_SURFACESBYCOLOUR2 "Select surfaces with a specific colour."
+    ID_SELECTION_CURVESBYCOLOUR2 "Select curves with a specific colour."
+    ID_SELECTION_POINTSBYCOLOUR2 "Select points with a specific colour."
+    ID_WORKPLAIN_WPALIGNTOCURVE2 "Align the workplain to a specified curve."
+    ID_WORKPLAIN_WPALIGNTOSURFACE2 
+                            "Align the workplain to a specified surface."
 END
 
 STRINGTABLE
 BEGIN
+    ID_POST_SELECTDEFORMEDRESULTS2 "Select deformed results."
     ID_VIEW_DISPLAYELEMENTCOORDSYS 
-                            "[Draw] Display Element Coord Sys\n[Draw] Display Element Coord Sys"
+                            "Toggle display of elements' coordinate systems\n[Draw] Display Element Coord Sys"
+    ID_ANALYSIS_CREATEMOMENT "Create a moment on node\n[BC] Moment"
+    ID_ANALYSIS_CREATEPRESSURE 
+                            "Create a pressure on shell element\n[BC] Pressure"
     ID_VISABILITY_BOUNDARYCONDITIONS 
-                            "[Draw] Toggle Boundary Condition Visibility\n[Draw] Toggle Boundary Condition Visibility"
-    ID_POST_LISTELEMENTRESULT "List selected element results."
-    ID_MESHQND              "Quads Between Nodes"
+                            "Toggle display of boundary conditions\n[Draw] Toggle Boundary Condition Visibility"
+    ID_OPTIONS_DEFORMATIONSCALE2 "Change the deformation scale."
+    ID_ELEMENTTYPE_ROD2     "Rod Element."
+    ID_VIEW_DISPLAYELEMENTCOORDSYS2 "Display element coordinate systems."
+    ID_VISABILITY_BOUNDARYCONDITIONS2 "Toggle Boundary Condition Visability"
+    ID_POST_EXPORTRESULTSTOTEXTFILE2 "Export the results to a .csv file."
+    ID_NODEMODIFY_LABEL2    "Change the seleted node labels by a fixed increment."
+    ID_POST_LISTELEMENTRESULT 
+                            "List results for selected elements\n[POST] Selected Element Results"
+    ID_ELEMENTMODIFIY_LABELBYINC2 
+                            "Change the seleted element labels by a fixed increment."
+    ID_NODEMODIFY_LABELBYSTART2 
+                            "Change the selected node labels by specifing the start ID."
+    ID_ELEMENTMODIFIY_LABELBYSTART2 
+                            "Change the selected element labels by specifing the start ID."
+    ID_MESHQND              "Create array of QUADs between nodes\n[FE] QUADs Between Nodes"
 END
 
 STRINGTABLE
 BEGIN
+    ID_CURVEMODIFY_WEIGHTTHIN "Change the curve weight to thin."
+    ID_CURVEMODIFY_WEIGHTMEDIUM "Change the curve weight to medium."
+    ID_CURVEMODIFY_WEIGHTLARGE "Change the curve weight to large."
+    ID_CURVEMODIFY_SOLID    "Change the curve line type to solid."
+    ID_CURVEMODIFY_DOT      "Change the curve line type to dotted."
+    ID_CURVEMODIFY_DASH     "Change the curve line type to dashed."
+    ID_CURVEMODIFY_CENTRE   "Change the curve line type to centre line."
+    ID_POINTMODIFY_CTRLPOINTWEIGHT 
+                            "Modify the NURBS weight of a curve control point."
     ID_CIRCLE_CIRCLECENTREPOINT 
-                            "[Create] Circle centre and point on radius\n[Create] Circle centre and point on radius"
+                            "Create circle from centre point and point on radius\n[Create] Circle centre and point on radius"
+    ID_CIRCLE_CIRCLECENTREPOINT2 
+                            "Create a circle by centre point and point on circumferance."
 END
 
 STRINGTABLE
 BEGIN
-    ID_TOOLS_COPYTO         "[Edit] Copy objects by selecting locations\n[Edit] Copy objects by selecting locations"
-    ID_TOOLS_MOVETO         "[Edit] Move To\n[Edit] Move To"
+    ID_TOOLS_COPYROTATE2D   "Copy and rotate objects in 2D\n[Edit] Copy and Rotate 2D"
+    ID_TOOLS_REFLECT2D      "Reflect selection in 2D\n[Edit] Reflect 2D"
+    ID_TOOLS_COPYTO         "Copy selection to location\n[Edit] Copy by selecting locations"
+    ID_TOOLS_MOVETO         "Move selection to\n[Edit] Move To"
     ID_BUTTON33130          "Move objects by selecting locations"
-    ID_MESH_TETFROMSHELLBOUNDARY "TET from Shell Boundary"
+    ID_TOOLS_COPYTO2        "Copy objects by picking locations"
+    ID_TOOLS_MOVETO2        "Move objects by selecting locations"
+    ID_MESH_TETFROMSHELLBOUNDARY 
+                            "Create TET from shell boundary\n[FE] TET from Shell Boundary"
+    ID_MESH_TETFROMSHELLBOUNDARY2 "Create tet mesh from shell boundary."
 END
 
 STRINGTABLE
@@ -2249,31 +1692,67 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_POST_SELECTRESULTS   "Select Contour Results"
-    ID_POST_CONTOURRAWDATA  "Display Contour Raw Results"
-    ID_POST_TOGRESULTSLABELS "Toggle Results Label Display"
-    ID_POST_DEFORMEDDISPLAY "Display Deformed Results"
-    ID_POST_SELECTDEFORMEDRESULTS "Select Deformed Results"
-    ID_OPTIONS_DEFORMATIONSCALE "Deformation Scale"
-    ID_ELEMENTTYPE_ROD      "Set default element type to ROD."
+    ID_WORKPLAIN_WPCENTRE2  "Centre the workplain at a specified point."
+    ID_POST_SELECTRESULTS   "Select contour results\n[POST] Select Contour Results"
+    ID_POST_SELECTRESULTS2  "Select contour results."
+    ID_POST_LISTRESSET2     "List all results sets."
+    ID_POST_CONTOURRAWDATA  "Display raw contour results\n[POST] Display Contour Raw Results"
+    ID_POST_LISTSELECTEDRESSET2 "List the selected results set."
+    ID_POST_TOGRESULTSLABELS 
+                            "Toggle display of labels on result\n[POST] Toggle Label Display"
+    ID_POST_DEFORMEDDISPLAY "Display deformed results\n[POST] Display Deformed Results"
+    ID_POST_SELECTDEFORMEDRESULTS 
+                            "Select deformed results\n[POST] Select Deformed Results"
+    ID_POST_CONTOURRAWDATA2 "Contour plot."
+    ID_POST_TOGRESULTSLABELS2 "Turn on or off results labels."
+    ID_OPTIONS_DEFORMATIONSCALE 
+                            "Set deformation scale\n[POST] Deformation Scale"
+    ID_POST_DEFORMEDDISPLAY2 "Deformed display."
+    ID_ELEMENTTYPE_ROD      "Set default element type to ROD\n[Element] ROD"
 END
 
 STRINGTABLE
 BEGIN
+    ID_LIST_ALLPROPERTIES   "List all properties in the model."
+    ID_LIST_ALLMATERIALS    "List all materials in the model."
+    ID_LIST_PROPERTY        "List a specific property."
+    ID_LIST_MATERIAL        "List a specific material."
     ID_VIEW_DISPLAYSHELLTHICKNESS 
-                            "[Draw] Display Shell Thickness\n[Draw] Display Shell Thickness"
-    ID_ELEMENTTYPE_BEAM     "Set default element type to BEAM."
+                            "Toggle display of shell thicknesses\n[Draw] Display Shell Thickness"
+    ID_VIEW_DISPLAYSHELLTHICKNESS2 "Display shell element thickness."
+    ID_ELEMENTTYPE_BEAM     "Set default element type to BEAM\n[Element] BEAM"
+    ID_VIEW_DISPLAYELEMENTOFFSETS2 "Display offsets on elements."
+    ID_ELEMENTTYPE_BEAM2    "Beam Element."
+    ID_ELEMENTMODIFIY_BEAMUPVECTORS2 "Set the beam orientation vector."
+    ID_ELEMENTMODIFIY_BEAMOFFSET2 "Set beam offset vector."
+    ID_ELEMENTMODIFIY_SHELLOFFSET2 "Set shell element offset."
+    ID_PROPERTY_BEAM2       "Craete Beam Rod Section (NASTRAN ROD)"
+    ID_PROPERTY_BEAMBAR     "Create Beam Bar Section (NASTRAN BAR)"
+    ID_PROPERTY_BEAMTUBE    "Create Beam Tube Section (NASTRAN TUBE)"
 END
 
 STRINGTABLE
 BEGIN
+    IDS_EDIT_MENU           "Edit"
     ID_INDC_LC              "LC               "
     ID_INDC_BC              "BC              "
+    IDR_DRAW                "Draw"
     ID_INDICATOR_TS         "TS               "
+    IDR_CREATE              "Create"
+    ID_INDC_LC2             "LC               "
+    ID_INDC_BC2             "BC              "
+    ID_INDICATOR_TS2        "TS               "
 END
 
 STRINGTABLE
 BEGIN
+    ID_CHECKS_CHECKTETCOLLAPSE "Check TET Collapse"
+    ID_VIEW_TOP             "Top View"
+    ID_VIEW_FRONT           "Front view XY"
+    ID_VIEW_LEFTXY          "Left View ZY"
+    ID_VIEW_BACK            "Back View -XY"
+    ID_VIEW_RIGHT           "Right View -ZY"
+    ID_VIEW_BOTTOMXZ        "Bottom View XZ"
     ID_VIEW_WP              "View on Workplane"
 END
 
@@ -2283,87 +1762,162 @@ BEGIN
     ID_WP_VIEW              "View On WP"
     ID_BUTTON33236          "WP VIEW"
     ID_BUTTON33238          "View on WP"
-    ID_PROJ_FRONT           "Front View"
-    ID_PROJ_TOP             "Top View"
-    ID_PROJ_BOTTOMXZ        "Bottom View"
-    ID_PROJ_LEFTXY          "View Left"
-    ID_PROJ_BACK            "View Back"
-    ID_PROJ_RIGHT           "View Right"
-    ID_PROJSO1              "Isomrtric"
+    ID_PROJWP               "Align view to workplane\n[View] Workplane"
+    ID_PROJ_FRONT           "Align view to front\n[View] Front"
+    ID_PROJ_TOP             "Align view to top\n[View] Top"
+    ID_PROJ_BOTTOMXZ        "Align view to bottom\n[View] Bottom"
+    ID_PROJ_LEFTXY          "Align view to left\n[View] Left"
+    ID_PROJ_BACK            "Align view to back\n[View] Back"
+    ID_PROJ_RIGHT           "Align view to right\n[View] Right"
+    ID_PROJSO1              "Change to isometric view\n[View] Isometric"
 END
 
 STRINGTABLE
 BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDD_INPUT               "INPUT"
+    IDS_EDIT1               "EIDIT1"
+    IDS_EDIT2               "Edit2"
+    IDS_EDIT3               "Edit3"
+    IDS_DRAW                "Draw"
+    IDS_EDIT                "Edit"
+    IDS_FE                  "FE"
+    IDS_GROUP               "Groups"
     ID_VIEW_ONWP            "AAAAA"
+    IDS_BC                  "Loads and Boundary Conditions"
 END
 
 STRINGTABLE
 BEGIN
-    ID_PROPISO2             "View ISO2"
-    ID_ELEMENTTYPE_MASS     "Lumped mass element type"
-    ID_VISABILITY_WORKPLANE "[Draw] Display Work Plane\n[Draw] Display Work Plane"
-    ID_TOOLS_MEASUREANGLE   "[Edit] Measure Angle\n[Edit] Measure Angle"
+    ID_PROPISO2             "Change to alternative isometric viewpoint\n[View] Alt Isometric"
+    ID_ELEMENTTYPE_MASS     "Set default element type to LUMPED MASS\n[Element] LUMPED MASS"
+    ID_VISABILITY_WORKPLANE "Toggle display of work plane\n[Draw] Display Work Plane"
+    ID_VISABILITY_WORKPLANE2 "Toggle workplane visability"
+    ID_TOOLS_MEASUREANGLE   "Measure angle between three points\n[Edit] Measure Angle"
+    ID_TOOLS_MEASUREANGLE2  "Measure angle between 3 points"
     ID_LOADSBC_CREATEROTATIONALBODYLOAD 
-                            "Create a rotational acceleration load"
+                            "Create a rotational acceleration load\n[BC] Rotational Acceleration"
+    ID_LOADSBC_CREATEROTATIONALBODYLOAD2 "Create rotational body load."
     ID_NODEMODIFY_CHANGEXORDINATE 
-                            "[Utils] Change node X ordinate\n[Utils] Change node X ordinate"
+                            "Change node X ordinate\n[Utils] Node X Ordinate"
     ID_NODEMODIFY_CHANGEZORDINATE 
-                            "[Utils] Change node Z ordinate\n[Utils] Change node Z ordinate"
+                            "Change node Z ordinate\n[Utils] Node Z Ordinate"
 END
 
 STRINGTABLE
 BEGIN
     ID_NODEMODIFY_CHANGEYORDINATE 
-                            "[Utils] Change node Y ordinate\n[Utils] Change node Y ordinate"
+                            "Change node Y ordinate\n[Utils] Node Y Ordinate"
     ID_BUTTON33265          "Modify Node X Ordinate"
     ID_BUTTON33266          "Change node Y ordinate"
     ID_PROPERTYMODIFY_EDITPROPERTYVALUES 
-                            "[Edit] Edit Property Values\n[Edit] Edit Property Values"
+                            "Edit property values\n[Edit] Property Values"
     ID_PROPERTY_EDITMATERIALVALUES 
-                            "[Edit] Edit Material Values\n[Edit] Edit Material Values"
+                            "Edit material values\n[Edit] Material Values"
+    ID_PROPERTYMODIFY_EDITPROPERTYVALUES2 "Edit Properties Values"
+    ID_PROPERTY_EDITMATERIALVALUES2 "Edit Material Values"
     ID_VIEW_SURFACEDIRECTIONMARKERS 
-                            "[Draw] Surface Direction Markers On/Off\n[Draw] Surface Direction Markers On/Off"
-    ID_POST_LISTNODALRESULTS "List Nodal Results Values"
+                            "Toggle display of surface direction markers\n[Draw] Surface Direction Markers"
+    ID_POST_LISTNODALRESULTS 
+                            "List result values for nodes\n[POST] Nodal Results"
+    ID_PROPERTY_BEAM33274   "Basic Beam "
+    ID_PROPERTY_BEAM_BASIC2 "Create a General Beam Section by Entering All Properties"
+    ID_POST_LISTNODALRESULTS2 "List Nodal Results Values"
 END
 
 STRINGTABLE
 BEGIN
+    ID_CHECKS_FREEFACEDSP   "Element free face check"
     ID_MESH_SHELLCOATSOLIDELEMENTS "Shell Coat Solid Elements"
     ID_CHECKS_FREEEDGEDISPLAY 
-                            "[Utils] Display the free edges of selected elements\n[Utils] Display the free edges of selected elements"
-    ID_MESH_QUADTOTRI       "Split Quad's into Tri elements"
+                            "Display the free edges of selected elements\n[Utils] Display Free Edges of Selected Elements"
+    ID_MESH_SHELLCOATSOLIDELEMENTS2 "Shell coat solid element free faces."
+    ID_MESH_QUADTOTRI       "Split QUADs into TRIs\n[FE] QUAD to TRI"
+    ID_CHECKS_FREEEDGEDISPLAY2 "Display the free edges of selected elements."
+    ID_ANALYSIS_LOADSETS    "Create a load set\n[BC] Load Set"
+    ID_MESH_QUADTOTRI2      "TODO\nTODO"
+    ID_LOADSBC_BCSETS2      "TODO\nTODO"
+    ID_LOADSBC_TEMPERATURESETS2 "Create a temperature set."
+    ID_LOADSBC_CREATESTRUCTURALTEMP 
+                            "Create a structural temperature load on element\n[BC] Temperature"
+    ID_LOADSBC_CREATETHERMALTEMPBC "N/A yet"
+    ID_LOADSBC_CREATETHERMALNETTFLUXLOAD "N/A yet."
+    ID_SOLUTION_LISTSOLUTIONSEQUENCES "List the current solutions."
+    ID_SOLUTION_CREATESOLUTIONSEQUENCE "Create a solution."
+    ID_SOLUTION_CREATE      "Create a solution step."
 END
 
 STRINGTABLE
 BEGIN
-    ID_OPTIONS_SETCOLOURBAR "Set Colour Bar Scale"
-    ID_VISABILITY_COORDSON  "[Draw] Display Coordinate Systems\n[Draw] Display Coordinate Systems"
+    ID_POST_LISTELEMENTRESULT2 "List selected element results."
+    ID_VIEW_GFRADIENTFILLEDBACKGROUND2 "Display a gradient filled background."
+    ID_ELEMENTMODIFIY_REVERSE2 "Reverse element definition."
+    ID_OPTIONS_SETCOLOURBAR "Set colour bar scale\n[POST] Set Colour Bar Scale"
+    ID_VISABILITY_COORDSON  "Toggle display of coordinate systems\n[Draw] Display Coordinate Systems"
+    ID_MESHQND2             "Set next group active\n[Group] Next"
+    ID_IMPORT_TXTTOGROUPS2  "Set previous group active\n[Group] Previous"
+    ID_VIEW_DISPLAYMATERIALDURECTION2 "Display element material directions."
+    ID_OPTIONS_SETCOLOURBAR2 "Set colour bar min and max limits."
+    ID_VISABILITY_COORDSON2 "Toggle Coordinate System Visability"
+    ID_GROUP_NEXTGROUP2     "Move to the Next Group"
+    ID_GROUP_PREVIOUSGRPUP2 "Move to the Previous Group"
 END
 
 STRINGTABLE
 BEGIN
-    ID_POST_ANIMATE         "Animate Results"
-    ID_POST_ANIMATENEG      "Animate Positve and Negative Toggle"
-    ID_POST_FRAMEDELAY      "Animation Frame Delay"
-    ID_POST_ANIMATIONFRAMES "No of Animation Frames"
-    ID_TOOLS_EDITOBJECT     "[Edit] Edit Object Values\n[Edit] Edit Object Values"
+    ID_POST_ANIMATE         "Animate results\n[POST] Animate"
+    ID_CURVEMODIFY_INSERTKNOT2 "Insert Knot into Knot Vector"
+    ID_POST_ANIMATENEG      "Toggle between animating positive and negative results\n[POST] Animate Positve and Negative Toggle"
+    ID_POST_ANIMATE2        "Animate Display"
+    ID_POST_FRAMEDELAY      "Animation frame delay\n[POST] Animation Frame Delay"
+    ID_POST_ANIMATIONFRAMES "Number of animation frames\n[POST] No of Animation Frames"
+    ID_POST_ANIMATENEG2     "Animate Positive and Negative Toggle"
+    ID_POST_FRAMEDELAY2     "Animation Frame Delay"
+    ID_POST_ANIMATIONFRAMES2 "No of Animation Frames"
+    ID_ELEMENTMODIFIY_BEAMENDARELEASE2 "Release end A degrees of Freedom"
+    ID_TOOLS_EDITOBJECT     "Edit object values\n[Edit] Object Values"
+    ID_ELEMENTMODIFIY_BEAMENDBRELEASE2 "Release end B degrees of Freedom"
+    ID_OPTIONS_DEFORMATIONOFFSET2 "Relative Deformation Offset"
+    ID_POST_LISTRESULTSVECTORS2 "List Available Reults Vectors"
+    ID_TOOLS_EDITOBJECT2    "Edit Object Values Via Data Table Editor"
 END
 
 STRINGTABLE
 BEGIN
-    ID_OPTIONS_VECTORSCALE  "Vector Display Scale"
-    ID_POST_SELECTVECTORRESULTS "Select vector results for arrow display."
+    ID_OPTIONS_VECTORSCALE  "Set vector display scale\n[POST] Vector Display Scale"
+    ID_POST_SELECTVECTORRESULTS 
+                            "Select vector results for arrow display\n[POST] Select Vectors"
+    ID_OPTIONS_VECTORSCALE2 "Set Vector Length Scale Factor"
     ID_POST_CLEARRESULTSVECTORS "Remove Results Vectors from Display"
+    ID_POST_SELECTVECTORRESULTS2 "Select vector results for arrow display."
     ID_BUTTON33305          "Set Vector Length Scale Factor"
     ID_BUTTON33306          "No of Animation Frames"
     ID_BUTTON33307          "List Nodal Results Values"
+    ID_POST_CLEARRESULTSVECTORS2 "Remove Results Vectors from Display"
     ID_MESH_ADVANCINGFRONTSURFACEMESHTRI "Advancing Front Surface Mesh TRI"
+    ID_MESH_ADVANCINGFRONTSURFACEMESHTRI2 
+                            "Advancing Front Surface Mesh on Surface"
 END
 
 STRINGTABLE
 BEGIN
-    ID_LINE_MULTILINE       "[Create] Multiple Continued Line\n[Create] Multiple Continued Line"
-    ID_MESH_MESHSIZEONSURFACE "Define mesh size on surface for Auto-Mesher"
+    ID_LINE_MULTILINE       "Create multiple continued lines\n[Create] Multiple Continued Lines"
+    ID_LINE_MULTILINE2      "Multiple Continued Line"
+    ID_CHECKS_2DSECTIONPROPERTIESAIXXIYYETC 
+                            "Calculate 2d section properties of a group of 2d elements in XY plane (A,Ixx,Iyy,Izz)"
+    ID_MESHMANAGEMENT_LISTALLMESHES 
+                            "List all finite element models in the database."
+    ID_MESHMANAGEMENT_SETACTIVEMESH "Set the active mesh to work on."
+    ID_MESHMANAGEMENT_TOGGLEMESHVISABILITY "Toggle mesh visability"
+    ID_MESHMANAGEMENT_CREATENEWMESH "Create a new Finite Element mesh."
+    ID_MESHMANAGEMENT_DELETEMESH "Delete Finite Element mesh."
+    ID_VIEW_HIDEENTITIES    "Hide selected enties."
+    ID_VIEW_SHOWALLHIDDEN   "Shoe all hidden entities."
+    ID_POST_LISTRESPONSEDATA "List Frequency Response Data"
+    ID_MESH_MESHSIZEONSURFACE 
+                            "Define mesh size on surface for auto-mesher\n[FE] Auto Element Size"
+    ID_MESH_MESHSIZEONSURFACE2 "Define mesh size on surface for Auto-Mesher"
+    ID_PARTMODIFY_EXTRACT   "Extract Surfaces, Curves , Points from PArt"
 END
 
 STRINGTABLE
@@ -2373,75 +1927,336 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_CURVETOOLS_TEXT      "[Create] Add Text\n[Create] Add Text"
+    ID_CHECKS_TETCIRCUMSPHERE 
+                            "Calculate the circum radius and centre of a TET Element (Internal Check)"
+    ID_FILE_RUNSCRIPTFILE   "Run an M3d Script File"
+    ID_FEMTOOLS_MESHSIZEONCURVES "Beam Mesh on Curves"
+    ID_EDIT_REDO33332       "Redo Last"
+    ID_CURVETOOLS_TEXT      "Add Text\n[Create] Text"
+    ID_CURVETOOLS_TEXT2     "Add Text"
+    ID_PROPERTY_PCOMP       "Create PCOMP Laminate Property"
+    ID_PROPERTY_DISPLAYLAMINATESTACK "Display Laminate Stack Sequence"
+    ID_PROPERTY_PBUSH       "Create a Nastran PBUSH spring property"
+    ID_MANIPULATION_ENVELOPEMAXIMUM 
+                            "Create an enveloped results set of maximum value"
+    ID_MANIPULATION_ENVELOPEMINIMUM 
+                            "Create an enveloped results set of maximum value"
+    ID_MANIPULATION_SCALE   "Scale a results set variable"
+    ID_MANIPULATION_DIVIDEINTO 
+                            "Divide a results set variable into a number used for RF calculations"
 END
 
 STRINGTABLE
 BEGIN
+    ID_POST_GRAPHRESPONSEDATA "Graph response data."
+    ID_FEMTOOLS_SWEEPNODESTOBEAMS33361 "Sweep nodes into beam elements."
+    ID_FEMTOOLS_SWEEPNODESTOSHELLS33362 "Sweep nodes into shell elements."
+    ID_VIEW_HIGHLIGHTLIMIT  "Set the limit on the no of objects to highlight"
+    ID_SELECTION_RBECENTRENODES "Select RBE Centre Nodes"
+    ID_CHECKS_COUNTF        "Count No Off Selected Nodes and Elements etc"
     ID_CURVEMODIFY_SPLITATPOINT 
-                            "[Edit] Split a Curve at a Point\n[Edit] Split a Curve at a Point"
-    ID_CURVETOOLS_ORTHOSNAP "[Create] Toggle Orthogonal Line Drawing Mode.\n[Create] Toggle Orthogonal Line Drawing Mode."
-    ID_CURVEMODIFY_TRIM     "[Edit] Trim Curves to Other Curves\n[Edit] Trim Curves to Other Curves"
+                            "Split a curve at a point\n[Edit] Split Curve at Point"
+    ID_CURVEMODIFY_SPLITATPOINT2 "Split a Curve at a Point"
+    ID_ELEMENTMODIFIY_INTERSECTTRIELEMENTS2 
+                            "Experimental, Intersect TRI elements."
+    ID_NODEMODIFY_EQUIVALENCELAB2 "Equivalence node labels between meshes"
+    ID_ELEMENTMODIFIY_COLOURBYPID2 "Colour elements according to PID"
+    ID_MESHMANAGEMENT_SETINCLUDEFILENO 
+                            "Set the include file no for selected items."
+    ID_ELEMENTMODIFIY_COLOURBYINCLUDEFILE "Colour Elements by Include File"
+    ID_CURVETOOLS_ORTHOSNAP "Toggle Orthogonal Line Drawing Mode.\n[Create] Orthogonal Lines"
+    ID_CURVEMODIFY_TRIM     "Trim curves to other curves\n[Edit] Trim Curves to Other Curves"
 END
 
 STRINGTABLE
 BEGIN
     ID_CURVETOOLS_LINETHROUPTANDTANGENTTOCIRCLE 
-                            "[Create] Line Throu Pt and Tangent to Circle\n[Create] Line Throu Pt and Tangent to Circle"
+                            "Create a line from point and tangent to a circle\n[Create] Line Through Point and Tangent to Circle"
     ID_CURVETOOLS_LINETANGENTTO2CIRCLES 
-                            "[Create] Line Tangent to 2 Circles\n[Create] Line Tangent to 2 Circles"
+                            "Create line tangent to two circles\n[Create] Line Tangent to 2 Circles"
+    ID_CURVETOOLS_LINETHROUPTANDTANGENTTOCIRCLE2 
+                            "Line Throu Pt and Tangent to Circle"
+    ID_CURVETOOLS_LINETANGENTTO2CIRCLES2 "Create a Line Tangent to 2 Circles"
     ID_ORTHO                "Ortgogonal Line Drawing Mode"
     ID_VIEW_TOGGLECONTROLPOINTVISABILITY 
-                            "[Draw] Toggle Control Point Visibility\n[Draw] Toggle Control Point Visibility"
+                            "Toggle display of control points\n[Draw] Toggle Control Point Visibility"
     ID_BUTTON33403          "Toggle Control Point Visability"
+    ID_VIEW_TOGGLECONTROLPOINTVISABILITY2 
+                            "Toggle On and Off All Objects Control Points"
+    ID_CURVEMODIFY_LAYERNUMBER "Set the Curve / Point Layer Number"
+    ID_SELECTION_SELECTCURVE "Select Curves/Points by Layer ID"
 END
 
 STRINGTABLE
 BEGIN
+    ID_VIEW_TOGGLEONCIRCLESTARTMARKERS 
+                            "Put an S at Beginning of Circle (Helps when using Trim)"
+    ID_TOOLS_INSERTBITMAPBACKGROUND "Insert a Bitmap Background Image"
+    ID_VIEW_TOGGLEON        "Toggle On and Off any Background Bitmap"
     ID_QNODE                "Pick Nodes Obly"
     ID_QELEMENT             "Pick Elements Only"
     ID_QPOINT               "Pick Points Only"
     ID_QCURVE               "Pick Curves Only"
     ID_QALL                 "Pick All"
-    ID_QFILTER_NODES        "[Quick Filter] Pick Nodes Only\n[Quick Filter] Pick Nodes Only"
-    ID_QFILTER_ELEMENTS     "[Quick Filter] Pick Elements Only\n[Quick Filter] Pick Elements Only"
-    ID_QFILTER_POINTS       "[Quick Filter] Pick Points Only\n[Quick Filter] Pick Points Only"
-    ID_QFILTER_CURVES       "[Quick Filter] Pick Curves Only\n[Quick Filter] Pick Curves Only"
-    ID_QFILTER_SURFACE      "[Quick Filter] Pick Surfaces Only\n[Quick Filter] Pick Surfaces Only"
-    ID_QFILTER_ALL          "[Quick Filter] All Pickable\n[Quick Filter] All Pickable"
+    ID_QFILTER_NODES        "Limit selection to nodes only\n[Quick Filter] Nodes"
+    ID_QFILTER_ELEMENTS     "Limit selection to elements only\n[Quick Filter] Elements"
+    ID_QFILTER_POINTS       "Limit selection to points only\n[Quick Filter] Points"
+    ID_QFILTER_CURVES       "Limit selection to curves only\n[Quick Filter] Curves"
+    ID_QFILTER_SURFACE      "Limit selection to surfaces only\n[Quick Filter] Surfaces"
+    ID_QFILTER_ALL          "Remove selection filters\n[Quick Filter] All"
 END
 
 STRINGTABLE
 BEGIN
-    ID_DIMENSIONTOOLS_DIMSIZE "Set Dimension Size."
-    ID_DIMENSIONTOOLS_ALIGNEDDIM "Aligned Dimension"
-    ID_DIMENSIONTOOLS_HORIZONTALDIM "Horizontal Dimension."
-    ID_DIMENSIONTOOLS_VERTICALDIM "Vertical Dimension."
-    ID_DIMENSIONTOOLS_LEADERTEXT "Leader Text"
-    ID_DIMENSIONTOOLS_RADIUSDIM "Radius Dimension."
-    ID_DIMENSIONTOOLS_DIAMETERDIM "Diameter Dimension."
-    ID_DIMENSIONTOOLS_ANGULARDIMBY3POINTS "Angular Dimension by 3 Points."
-    ID_DIMENSIONTOOLS_DRAGDIM "Reposition Dimension by Drag."
+    ID_QFILTER_NODES2       "Pick Nodes Only"
+    ID_DIMENSIONTOOLS_DIMSIZE "Set dimension size\n[Dimension] Set Size"
+    ID_DIMENSIONTOOLS_ALIGNEDDIM "Aligned dimension\n[Dimension] Aligned"
+    ID_DIMENSIONTOOLS_DIMSIZE2 "Set the size (text height) of dimensions."
+    ID_DIMENSIONTOOLS_HORIZONTALDIM 
+                            "Horizontal dimension\n[Dimension] Horizontal"
+    ID_DIMENSIONTOOLS_VERTICALDIM "Vertical dimension\n[Dimension] Vertical"
+    ID_DIMENSIONTOOLS_LEADERTEXT "Create Text Label\n[Dimension] Text"
+    ID_DIMENSIONTOOLS_RADIUSDIM "Radius Dimension\n[Dimension] Radius"
+    ID_DIMENSIONTOOLS_DIAMETERDIM "Diameter dimension\n[Dimension] Diameter"
+    ID_DIMENSIONTOOLS_ANGULARDIMBY3POINTS 
+                            "Angular dimension by three points\n[Dimension] Angular by 3 points"
+    ID_DIMENSIONTOOLS_DRAGDIM 
+                            "Reposition dimension by dragging\n[Dimension] Drag Dimension"
     IDR_DIMS                "Dimensioning"
+    ID_DIMENSIONTOOLS_ALIGNEDDIM2 "Create an aligned dimension."
+    ID_DIMENSIONTOOLS_LINEARDIM2 "Create a horizontal linear dimension."
+    ID_DIMENSIONTOOLS_HORIZONTALDIM2 "Create horizonatal linear dimension"
+    ID_DIMENSIONTOOLS_VERTICALDIM2 "Create vertical linear dimension"
 END
 
 STRINGTABLE
 BEGIN
-    ID_DIMENSIONTOOLS_CIRCLECENTREMARKER "Create circle centre markers."
-    ID_ELEMENTTYPE_BUSH     "Set Element to BUSH"
+    ID_DIMENSIONTOOLS_LEADERTEXT2 "Create text with leader line."
+    ID_DIMENSIONTOOLS_RADIUSDIM2 "Create a radius dimension."
+    ID_DIMENSIONTOOLS_DIAMETERDIM2 "Create a diameter dimension."
+    ID_DIMENSIONTOOLS_ANGULARDIMBY3POINTS2 
+                            "Create Angular Dimension by 3 Points"
+    ID_DIMENSIONTOOLS_CIRCLECENTREMARKER 
+                            "Create circle centre markers\n[Dimension] Circle Centre Marker"
+    ID_DIMENSIONTOOLS_DRAGDIM2 "Drag dimension to re-position."
+    ID_ELEMENTTYPE_BUSH     "Set default element type to BUSH\n[Element] BUSH"
+    ID_DIMENSIONTOOLS_CIRCLECENTREMARKER2 "Create circle centre marker."
+    ID_QFILTER_ELEMENTS2    "Pick Elements Only"
+    ID_QFILTER_POINTS2      "Pick Points Only"
+    ID_QFILTER_CURVES2      "Pick Curves Only"
+    ID_QFILTER_SURFACE2     "Pick Surfaces Only"
+    ID_QFILTER_ALL2         "Pick All"
+    ID_ELEMENTTYPE_BUSH2    "BUSH 6 DOF Spring Element"
+    ID_EDIT_GLOBALPREFERENCES2 "Edit global stored parameters"
+    ID_LOADSBC_CREATETEMPD2 "Create defualt model structural temperature."
 END
 
 STRINGTABLE
 BEGIN
-    ID_VIEW_ZOOMALL         "[Draw] Fit All on View\n[Draw] Fit All on View"
+    ID_GROUP_ELEMENTSBYTYPE "Group elements by type\n[Group] By Type"
+    ID_GROUP_NODEBYCOLOUR   "Group nodes by colour\n[Group] By Colour"
+    ID_GROUP_NODEBUOUTPUTSYS 
+                            "Group nodes by output coordinate system\n[Group] By Output Coord Sys"
+    ID_GROUP_NODEBYDEFINITIONSYSTEM 
+                            "Group nodes by definition coordinate system\n[Group] By Def Coord Sys"
+    ID_GROUP_ELEMENTSBYMID  "Group elements by material\n[Group] By Material"
+    ID_POST_DELETEALLRESULTSSETS "Delete all result sets\n[POST] Delete All"
+    ID_OPTIONS_REVERSECOLOURBAR 
+                            "Reverse the colour bar\n[POST] Reverse Colours"
+    ID_VIEW_ZOOMALL         "Fit everything on viewport\n[Draw] Fit All on View"
+    ID_VIEW_ZOOMALL2        "Zoom to fit all F.E. objects."
+    ID_SELECTION_INVERTSELECTION "Invert the Current Selection"
 END
 
 STRINGTABLE
 BEGIN
     ID_ELEMENTTYPE_TRANSLATIONALSPRING 
-                            "Set default element type to TRANSLATIONALSPRING."
+                            "Set default element type to TRANSLATIONALSPRING\n[Element] TRANSLATIONALSPRING"
     ID_ELEMENTTYPE_ROTATIONALSPRING 
-                            "Set default element type to ROTATIONALSPRING."
+                            "Set default element type to ROTATIONALSPRING.\n[Element] ROTATIONALSPRING"
+    ID_ELEMENTTYPE_TRANSLATIONALSPRING2 "Translational Spring."
+    ID_ELEMENTTYPE_ROTATIONALSPRING2 "Rotational Spring."
+    ID_ELEMENTMODIFIY_SPRINGCOORDSYSTEM 
+                            "Assign a coordinate system to selected spring elements."
+    ID_CHECKS_CHECKSHELLELEMENTASPECTRATION 
+                            "Check Shell Element Aspect Ration"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "M3da"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the pParent document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ELTYPE              "Element Type"
+    IDS_STRING113           "Loads and Boundary Conditions"
+    IDS_POST                "Post Processing"
+    IDS_STRING115           "wwww"
+    IDS_LBC                 "Loads and BC"
+    ID_VIEW_ONWP2           "View on Workplane"
+    IDS_STATUS_PANE1        "Pane 1"
+    IDS_STATUS_PANE2        "Pane 2"
+    IDS_TOOLBAR_STANDARD    "Standard"
+    IDS_TOOLBAR_CUSTOMIZE   "Customize..."
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "Print the active document using current options\nQuick Print"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "M3d\n\nM3da\nM3da Files (*.m3d)\n.m3d\nM3da.Document\nM3da.Document"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING349           "Profection"
+    IDS_DRAW2               "Draw"
+END
+
+STRINGTABLE
+BEGIN
+    ID_LOADSBC_LISTLOADSETS "list all load sets."
+    ID_LOADSBC_LISTBOUNDARYSETS "List all boundary sets."
+    ID_LOADSBC_LISTTEMPERATURESETS "List all temperature sets."
+    ID_LOADSBC_CREATEACCELERATIONBODYLOAD 
+                            "Create an acceleration load on element\n[BC] Acceleration"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PROPERTY_BEAM33344   "Create Beam T2 Section"
+    ID_PROPERTY_BEAM33345   "Create Beam Channel 2 Section"
+    ID_PROPERTY_BEAM_T2     "Create Beam T Sections (NASTRAN T2)"
+    ID_PROPERTY_BEAM_CHAN2  "Create Beam Channel Section (NASTRAN CHAN2)"
+    ID_PROPERTY_BEAM_I2     "Create Beam I Section (NASTRAN I2)"
+    ID_PROPERTY_BEAM33350   "Create Beam L Section (NOT IN NASTRAN)"
+    ID_PROPERTY_BEAM33351   "Create Beam I Section (NASTRAN I2)"
+    ID_PROPERTY_BEAM_L      "Create Beam L Section (NASTRAN I2)"
+    ID_ELEMENTMODIFIY_BEAMOFFSETINBEAMY 
+                            "Offset Beam Elements in Element Y direction"
+    ID_ELEMENTMODIFIY_BEAMOFFSETINBEAMZ 
+                            "Offset Beam Elements in Element Z direction"
+    ID_TOOLS_PLANET         "Insert Planet Sphere"
+    ID_POST_LISTRESPONSEDATAALLVARS 
+                            "List frequency response data for all variable"
+    ID_POST_LABELRESPONSEENTITIES 
+                            "Label Nodes  / Elements where response data is available."
+END
+
+STRINGTABLE
+BEGIN
+    ID_CURVETOOLS_ORTHOSNAP2 "Toggle Orthogonal Line Drawing Mode."
+    ID_CURVEMODIFY_TRIM2    "Trim a curve to another curve."
+    ID_LIST_GAPSBETWEENLABELS2 "List gaps between node and element labelling"
+    ID_LIST_GAPSBETWEENMATSANDPROPSLABELS2 
+                            "Find gaps between materials and property labels"
+    ID_ELEMENTMODIFIY_INSERTSPRINGONRIGID2 
+                            "Insert a spring element between rigid elements"
+    ID_FEMTOOLS_SWEEPEDGESOUTWARD2 
+                            "Sweep shell edges outwards to create new rows of elements."
+END
+
+STRINGTABLE
+BEGIN
+    ID_LOADSBC_CREATEGRAV2  "Create Nastran GRAV card."
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the pParent window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
 END
 
 #endif    // English (United Kingdom) resources
