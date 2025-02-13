@@ -17,5 +17,10 @@ After selecting the C++ desktop option, select the tab at the top menu called �
 
      May appear as something like: C++ v14.29 (16.11) MFC for v142 build tools (x86 & x64)
 1. On the pane on the right, the list of Individual components is shown for reference. Now install it.
-2. The M3DFEA repo is at https://github.com/Juliapixel/M3da.git. You can clone this or alternatively select the green “Code” button and download a ZIP (and then Extract it to a folder).
+2. The M3DFEA repo is at https://github.com/M3dFea/M3da.git. You can clone it or alternatively select the green “Code” button and download a ZIP (and then Extract it to a folder).
 3. Open Visual Studio. Choose Visual C++ for the Development Settings. Choose the appropriate option based on your choice from Step 3. For example, if you extracted the ZIP to a folder, choose “Open a Local Folder”. If you open the “M3da-master” folder, then right click on the `.sln` file that is in the M3d_Setup folder and select “Build”. This will create a “Debug” folder that contains M3da.exe.
+
+> [!TIP]
+> On the top part of the window, you can pick between build configurations, with the 2 dropdown selectors next to the `Local Windows Debugger` button.
+>
+> Once you're done with your modifications, you can change the first selector to Release, to produce an optimized executable.
