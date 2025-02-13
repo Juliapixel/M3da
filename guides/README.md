@@ -5,6 +5,8 @@ Each of these guides, if applicable, has its own corresponding git branch, where
 
 To get started you must first become familiar with how to compile this program directly, please follow [the building guide](building.md).
 
+Demo builds of all guides merged together are available [here](https://github.com/Juliapixel/M3da/releases/latest).
+
 > [!CAUTION]
 > All modifications made when following these tutorials must be done inside the Microsoft Visual Studio editor. Failing to do so will most likely cause **very** annoying compilation errors.
 
