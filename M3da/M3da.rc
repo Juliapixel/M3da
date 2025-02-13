@@ -1894,7 +1894,8 @@ BEGIN
     ID_BUTTON33306          "No of Animation Frames"
     ID_BUTTON33307          "List Nodal Results Values"
     ID_POST_CLEARRESULTSVECTORS2 "Remove Results Vectors from Display"
-    ID_MESH_ADVANCINGFRONTSURFACEMESHTRI "Advancing Front Surface Mesh TRI"
+    ID_MESH_ADVANCINGFRONTSURFACEMESHTRI 
+                            "Create a TRI mesh from selected surfaces, uses the advancing front method\n[FE] Triangulate Surface"
     ID_MESH_ADVANCINGFRONTSURFACEMESHTRI2 
                             "Advancing Front Surface Mesh on Surface"
 END
