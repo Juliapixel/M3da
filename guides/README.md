@@ -5,7 +5,7 @@ Each of these guides, if applicable, has its own corresponding git branch, where
 
 To get started you must first become familiar with how to compile this program directly, please follow [the building guide](building.md).
 
-> [!WARNING]
+> [!CAUTION]
 > All modifications made when following these tutorials must be done inside the Microsoft Visual Studio editor. Failing to do so will most likely cause **very** annoying compilation errors.
 
 ### Guide List
